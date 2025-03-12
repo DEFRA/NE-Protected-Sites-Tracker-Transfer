@@ -1,0 +1,1014 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetTransactionData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:Pop_Ups;assembly=Pop Ups" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sn="clr-namespace:System.Net;assembly=System" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:us="clr-namespace:UiPathTeam.SharePoint;assembly=UiPathTeam.SharePoint" xmlns:usa="clr-namespace:UiPathTeam.SharePoint.Activities;assembly=UiPathTeam.SharePoint.Activities" xmlns:usal="clr-namespace:UiPathTeam.SharePoint.Activities.Lists;assembly=UiPathTeam.SharePoint.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Sequential counter of transaction items." Name="in_TransactionNumber" Type="InArgument(x:Int32)" />
+    <x:Property Name="out_boolLastTransaction" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="in_strProcessType" Type="InArgument(x:String)" />
+    <x:Property Name="in_boolContinue" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_ArrayAreas" Type="InArgument(s:String[])" />
+    <x:Property Name="in_CredSharepoint" Type="InArgument(sn:NetworkCredential)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="io_Config" Type="InOutArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_TransactionItem" Type="OutArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <this:GetTransactionData.in_ArrayAreas>
+    <InArgument x:TypeArguments="s:String[]" />
+  </this:GetTransactionData.in_ArrayAreas>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>2755.2,8438.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>GetTransactionData_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>Microsoft.Activities</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.SharePoint.Client</x:String>
+      <x:String>UiPathTeam.SharePoint</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPathTeam.SharePoint.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPathTeam.SharePoint.Activities.Lists</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>Pop_Ups</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Services.Common</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.Client</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.Client.Runtime</AssemblyReference>
+      <AssemblyReference>OfficeDevPnP.Core</AssemblyReference>
+      <AssemblyReference>UiPathTeam.SharePoint</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPathTeam.SharePoint.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>Pop Ups</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="2765.2,8373.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="booNoMoreItems" />
+      <Variable x:TypeArguments="x:Boolean" Name="booMoreChecks" />
+      <Variable x:TypeArguments="sd:DataTable" Name="datExtractedItems" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <usa:SharepointApplicationScope AzureApplicationID="{x:Null}" ClientContext="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" LoginTimeout="{x:Null}" Password="{x:Null}" AzureAppPermissions="FullControl" DisplayName="Sharepoint application scope - Get List Item - Created" sap:VirtualizedContainerService.HintSize="2703.2,8135.2" sap2010:WorkflowViewState.IdRef="SharepointApplicationScope_1" PlatformType="Online" QueryGrouping="False" ResetCredentials="False" SecurePassword="[in_CredSharepoint.SecurePassword]" SharePointInstanceType="Online" URL="https://defra.sharepoint.com/teams/Team1356" UserName="[in_CredSharepoint.Username.tostring]">
+      <usa:SharepointApplicationScope.Body>
+        <ActivityAction x:TypeArguments="us:SharePointContextInfo">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="us:SharePointContextInfo" Name="SharePointContextInfoTag" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="2669.2,7991.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strCAMLQuery" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out - Full CAML Query - Logic Issues" sap:VirtualizedContainerService.HintSize="2607.2,53.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,374.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,83.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[strCAMLQuery]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String" xml:space="preserve">&lt;Query&gt;
+  &lt;Where&gt;
+    &lt;And&gt;
+      &lt;And&gt;
+        &lt;And&gt;
+          &lt;Geq&gt;
+            &lt;FieldRef Name='ID' /&gt;
+            &lt;Value Type='Number'&gt;5000&lt;/Value&gt;
+          &lt;/Geq&gt;
+          &lt;Leq&gt;
+            &lt;FieldRef Name='ID' /&gt;
+            &lt;Value Type='Number'&gt;10000&lt;/Value&gt;
+          &lt;/Leq&gt;
+        &lt;/And&gt;
+        &lt;Eq&gt;
+          &lt;FieldRef Name='Confirmation' /&gt;
+          &lt;Value Type='Choice'&gt;YES&lt;/Value&gt;
+        &lt;/Eq&gt;
+      &lt;/And&gt;
+      &lt;Or&gt;
+        &lt;Eq&gt;
+          &lt;FieldRef Name='Team' /&gt;
+          &lt;Value Type='Choice'&gt;Devon, Cornwall &amp; IoS&lt;/Value&gt;
+        &lt;/Eq&gt;
+        &lt;Or&gt;
+          &lt;Eq&gt;
+            &lt;FieldRef Name='Team' /&gt;
+            &lt;Value Type='Choice'&gt;Area 2&lt;/Value&gt;
+          &lt;/Eq&gt;
+          &lt;Or&gt;
+            &lt;Eq&gt;
+              &lt;FieldRef Name='Team' /&gt;
+              &lt;Value Type='Choice'&gt;Area 3&lt;/Value&gt;
+            &lt;/Eq&gt;
+            &lt;Or&gt;
+              &lt;Eq&gt;
+                &lt;FieldRef Name='Team' /&gt;
+                &lt;Value Type='Choice'&gt;Area 4&lt;/Value&gt;
+              &lt;/Eq&gt;
+              &lt;Or&gt;
+                &lt;Eq&gt;
+                  &lt;FieldRef Name='Team' /&gt;
+                  &lt;Value Type='Choice'&gt;Area 5&lt;/Value&gt;
+                &lt;/Eq&gt;
+                &lt;Or&gt;
+                  &lt;Eq&gt;
+                    &lt;FieldRef Name='Team' /&gt;
+                    &lt;Value Type='Choice'&gt;Area 6&lt;/Value&gt;
+                  &lt;/Eq&gt;
+                  &lt;Or&gt;
+                    &lt;Eq&gt;
+                      &lt;FieldRef Name='Team' /&gt;
+                      &lt;Value Type='Choice'&gt;Area 7&lt;/Value&gt;
+                    &lt;/Eq&gt;
+                    &lt;Or&gt;
+                      &lt;Eq&gt;
+                        &lt;FieldRef Name='Team' /&gt;
+                        &lt;Value Type='Choice'&gt;Area 8&lt;/Value&gt;
+                      &lt;/Eq&gt;
+                      &lt;Or&gt;
+                        &lt;Eq&gt;
+                          &lt;FieldRef Name='Team' /&gt;
+                          &lt;Value Type='Choice'&gt;Area 9&lt;/Value&gt;
+                        &lt;/Eq&gt;
+                        &lt;Or&gt;
+                          &lt;Eq&gt;
+                            &lt;FieldRef Name='Team' /&gt;
+                            &lt;Value Type='Choice'&gt;Area 10&lt;/Value&gt;
+                          &lt;/Eq&gt;
+                          &lt;Or&gt;
+                            &lt;Eq&gt;
+                              &lt;FieldRef Name='Team' /&gt;
+                              &lt;Value Type='Choice'&gt;Area 11&lt;/Value&gt;
+                            &lt;/Eq&gt;
+                            &lt;Eq&gt;
+                              &lt;FieldRef Name='Team' /&gt;
+                              &lt;Value Type='Choice'&gt;Area 12&lt;/Value&gt;
+                            &lt;/Eq&gt;
+                          &lt;/Or&gt;
+                        &lt;/Or&gt;
+                      &lt;/Or&gt;
+                    &lt;/Or&gt;
+                  &lt;/Or&gt;
+                &lt;/Or&gt;
+              &lt;/Or&gt;
+            &lt;/Or&gt;
+          &lt;/Or&gt;
+        &lt;/Or&gt;
+      &lt;/Or&gt;
+    &lt;/And&gt;
+    &lt;And&gt;
+      &lt;And&gt;
+        &lt;Eq&gt;
+          &lt;FieldRef Name='DAS_x0020_Eligible' /&gt;
+          &lt;Value Type='Choice'&gt;No&lt;/Value&gt;
+        &lt;/Eq&gt;
+        &lt;And&gt;
+          &lt;IsNotNull&gt;
+            &lt;FieldRef Name='Date_x0020_of_x0020_Confirmation' /&gt;
+          &lt;/IsNotNull&gt;
+          &lt;Or&gt;
+            &lt;Contains&gt;
+              &lt;FieldRef Name='Work_x0020_Area' /&gt;
+              &lt;Value Type='Choice'&gt;Assent&lt;/Value&gt;
+            &lt;/Contains&gt;
+            &lt;Or&gt;
+              &lt;Contains&gt;
+                &lt;FieldRef Name='Work_x0020_Area' /&gt;
+                &lt;Value Type='Choice'&gt;Advice&lt;/Value&gt;
+              &lt;/Contains&gt;
+              &lt;Contains&gt;
+                &lt;FieldRef Name='Work_x0020_Area' /&gt;
+                &lt;Value Type='Choice'&gt;Consent&lt;/Value&gt;
+              &lt;/Contains&gt;
+            &lt;/Or&gt;
+          &lt;/Or&gt;
+        &lt;/And&gt;
+      &lt;/And&gt;
+      &lt;Or&gt;
+        &lt;!-- Explicit null check --&gt;
+        &lt;IsNull&gt;
+          &lt;FieldRef Name='FCS_x0020_Closed_x0020_on_x0020_' /&gt;
+        &lt;/IsNull&gt;
+        &lt;!-- Explicit Not Equal check --&gt;
+        &lt;Neq&gt;
+          &lt;FieldRef Name='FCS_x0020_Closed_x0020_on_x0020_' /&gt;
+          &lt;Value Type='Choice'&gt;YES&lt;/Value&gt;
+        &lt;/Neq&gt;
+      &lt;/Or&gt;
+    &lt;/And&gt;
+  &lt;/Where&gt;
+  &lt;OrderBy&gt;
+    &lt;FieldRef Name='ID' Ascending='TRUE' /&gt;
+  &lt;/OrderBy&gt;
+&lt;/Query&gt;
+&lt;RowLimit&gt;1&lt;/RowLimit&gt;</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <usal:ReadListItems AttachmentsAction="{x:Null}" ItemsDictArray="{x:Null}" LocalPathHintText="{x:Null}" RelativeUrlHintText="{x:Null}" CAMLQuery="[strCAMLQuery]" ChooseFile="False" DisplayName="Get List Item - Sorted Confirmation, Team (Multiple), DAS, Date, &amp; Type  " sap:VirtualizedContainerService.HintSize="434,140" sap2010:WorkflowViewState.IdRef="ReadListItems_2" ItemsTable="[datExtractedItems]" ListName="Protected Sites Tracker" ShowAttachFiles="False" ShowCAMLQuery="True" ShowCAMLWarning="False" ShowGroupDescription="False" ShowGroupName="False" ShowLibraryName="False" ShowListName="True" ShowLocalPath="False" ShowMove="False" ShowPermissionDropdown="False" ShowPropertiesDictionary="False" ShowRelativeUrl="False" ShowRename="False" ShowUserName="False" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Assign booMoreChecks - FALSE" sap:VirtualizedContainerService.HintSize="2607.2,53.2" sap2010:WorkflowViewState.IdRef="Assign_16">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[booMoreChecks]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <If sap2010:Annotation.AnnotationText="Where the Process Type has been selected as &quot;Single&quot; mode and the framework has completed the first transaction then it should prompt the user to ask if it should continue processing. &#xA;&#xA;Before prompting it also checks to ensure there is more data to process before presenting the user with the option to continue." Condition="[in_strProcessType = &quot;single&quot; AND in_TransactionNumber &gt;1 AND in_boolContinue = False]" DisplayName="Present &quot;Single&quot; Mode Form?" sap:VirtualizedContainerService.HintSize="2607.2,245.6" sap2010:WorkflowViewState.IdRef="If_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <p:Generic_PopUp OUT_ProcessType="{x:Null}" OUT_strButtonSelected="{x:Null}" DisplayName="Single Mode Form" sap:VirtualizedContainerService.HintSize="200,24.8" IN_CSS_filepath="[&quot;/file://&quot; + system.io.Directory.GetCurrentDirectory + &quot;\Assets\Generic\ProcessAnotherForm.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="&lt;h1&gt;Continue processing?&lt;/h1&gt;&lt;P&gt;The robot has completed processing the previous case. Click Continue to process more cases.&lt;/P&gt;&lt;BR&gt;" IN_PopupTitle="Department for Environment, Food and Rural Affairs" IN_WidthHeight="[{500,275}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_2" />
+              </If.Then>
+            </If>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[booMoreChecks=True]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="2607.2,7408.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="2571.6,7240.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="2509.6,7129.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="2472,6896" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <usal:ReadListItems AttachmentsAction="{x:Null}" ItemsDictArray="{x:Null}" LocalPathHintText="{x:Null}" RelativeUrlHintText="{x:Null}" CAMLQuery="[&quot;&lt;Query&gt;&quot;+&#xA;&quot;  &lt;Where&gt;&quot;+&#xA;&quot;    &lt;And&gt;&quot;+&#xA;&quot;      &lt;And&gt;&quot;+&#xA;&quot;        &lt;Geq&gt;&quot;+&#xA;&quot;          &lt;FieldRef Name='ID' /&gt;&quot;+&#xA;&quot;          &lt;Value Type='Number'&gt;&quot;+io_Config(&quot;IDNumber&quot;).tostring+&quot;&lt;/Value&gt;&quot;+&#xA;&quot;        &lt;/Geq&gt;&quot;+&#xA;&quot;        &lt;Leq&gt;&quot;+&#xA;&quot;          &lt;FieldRef Name='ID' /&gt;&quot;+&#xA;&quot;          &lt;Value Type='Number'&gt;&quot;+(CInt(io_Config(&quot;IDNumber&quot;).tostring)+1000).ToString+&quot;&lt;/Value&gt;&quot;+&#xA;&quot;        &lt;/Leq&gt;&quot;+&#xA;&quot;      &lt;/And&gt;&quot;+&#xA;&quot;        &lt;IsNull&gt;&quot;+&#xA;&quot;          &lt;FieldRef Name='FCS_x0020_Closed_x0020_on_x0020_' /&gt;&quot;+&#xA;&quot;        &lt;/IsNull&gt;&quot;+&#xA;&quot;      &lt;/And&gt;&quot;+&#xA;&quot;  &lt;/Where&gt;&quot;+&#xA;&quot;&lt;/Query&gt;&quot;]" ChooseFile="False" DisplayName="Get List Item - Sorted Confirmation, Team (Multiple), DAS, Date, &amp; Type  " sap:VirtualizedContainerService.HintSize="2410,140" sap2010:WorkflowViewState.IdRef="ReadListItems_7" ItemsTable="[datExtractedItems]" ListName="Protected Sites Tracker" ShowAttachFiles="False" ShowCAMLQuery="True" ShowCAMLWarning="False" ShowGroupDescription="False" ShowGroupName="False" ShowLibraryName="False" ShowListName="True" ShowLocalPath="False" ShowMove="False" ShowPermissionDropdown="False" ShowPropertiesDictionary="False" ShowRelativeUrl="False" ShowRename="False" ShowUserName="False" />
+                        <If Condition="[datExtractedItems.rows.count=0]" DisplayName="If no rows:" sap:VirtualizedContainerService.HintSize="2410,273.2" sap2010:WorkflowViewState.IdRef="If_13">
+                          <If.Then>
+                            <Assign DisplayName="Set booNoMoreItems to TRUE" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_39">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[booNoMoreItems]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </If.Then>
+                        </If>
+                        <If Condition="[booNoMoreItems=True]" DisplayName="If No More Items" sap:VirtualizedContainerService.HintSize="2410,449.2" sap2010:WorkflowViewState.IdRef="If_8">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,258.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign DisplayName="Set transaction Item to Nothing" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[out_boolLastTransaction]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">[Nothing]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:Break sap:VirtualizedContainerService.HintSize="434,24.8" sap2010:WorkflowViewState.IdRef="Break_1" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                        <If Condition="[booNoMoreItems=False]" DisplayName="If items found:" sap:VirtualizedContainerService.HintSize="2410,5802.4" sap2010:WorkflowViewState.IdRef="If_6">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="2374.4,5611.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:FilterDataTable DataTable="[datExtractedItems]" DisplayName="Filter Data Table - Consistent Fields" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="2312.4,164" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[datExtractedItems]" SelectColumnsMode="Remove">
+                                <ui:FilterDataTable.Filters>
+                                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="8">
+                                    <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["DAS_x0020_Eligible"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["NO"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["FCS_x0020_Closed_x0020_on_x0020_"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTCONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Key_x0020_Notes"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Robot"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Confirmation"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["YES"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Final_x0020_Response_x0020_Sent"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                    </ui:FilterOperationArgument>
+                                  </scg:List>
+                                </ui:FilterDataTable.Filters>
+                                <ui:FilterDataTable.SelectColumns>
+                                  <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                    <x:Null />
+                                  </scg:List>
+                                </ui:FilterDataTable.SelectColumns>
+                              </ui:FilterDataTable>
+                              <ui:FilterDataTable DataTable="[datExtractedItems]" DisplayName="Filter Data Table - Type" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="2312.4,164" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[datExtractedItems]" SelectColumnsMode="Remove">
+                                <ui:FilterDataTable.Filters>
+                                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                    <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Consent"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Assent"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Advice"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Standalone HRA"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                  </scg:List>
+                                </ui:FilterDataTable.Filters>
+                                <ui:FilterDataTable.SelectColumns>
+                                  <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                    <x:Null />
+                                  </scg:List>
+                                </ui:FilterDataTable.SelectColumns>
+                              </ui:FilterDataTable>
+                              <ui:FilterDataTable DataTable="[datExtractedItems]" DisplayName="Filter Data Table - Type - Remove" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="2312.4,164" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[datExtractedItems]" SelectColumnsMode="Remove">
+                                <ui:FilterDataTable.Filters>
+                                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="8">
+                                    <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Pre Advice"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Pre Assent"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Pre Consent"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Work_x0020_Area"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Gamebird"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["SSSI_x0020_Response_x0020_Type"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Non-statutory"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["SSSI_x0020_Response_x0020_Type"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Not Required"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["SSSI_x0020_Response_x0020_Type"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["No response required"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                    <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                      <ui:FilterOperationArgument.Column>
+                                        <InArgument x:TypeArguments="x:String">["Key_x0020_Notes"]</InArgument>
+                                      </ui:FilterOperationArgument.Column>
+                                      <ui:FilterOperationArgument.Operand>
+                                        <InArgument x:TypeArguments="x:String">["Robot"]</InArgument>
+                                      </ui:FilterOperationArgument.Operand>
+                                    </ui:FilterOperationArgument>
+                                  </scg:List>
+                                </ui:FilterDataTable.Filters>
+                                <ui:FilterDataTable.SelectColumns>
+                                  <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                    <x:Null />
+                                  </scg:List>
+                                </ui:FilterDataTable.SelectColumns>
+                              </ui:FilterDataTable>
+                              <If Condition="[datExtractedItems.rows.count=0]" DisplayName="If rows remain after filter" sap:VirtualizedContainerService.HintSize="2312.4,4888.4" sap2010:WorkflowViewState.IdRef="If_5">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="496,491.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="Assign booMoreChecks - TRUE" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">[booMoreChecks]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign DisplayName="Add 1000 to IDNumber" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[io_Config("IDNumber")]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">[CInt(io_Config("IDNumber"))+1000]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:SetAsset TimeoutMS="{x:Null}" AssetName="IDNumber" DisplayName="Set Asset - ID Number" FolderPath="NE Root/Protected Sites Tracker Transfer" sap:VirtualizedContainerService.HintSize="434,135.6" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[io_Config(&quot;IDNumber&quot;).ToString]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="1772,4728" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="Assign booMoreChecks - FALSE" sap:VirtualizedContainerService.HintSize="1710,82.4" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">[booMoreChecks]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:FilterDataTable DataTable="[datExtractedItems]" DisplayName="Filter Data Table - Area Teams" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1710,164" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[datExtractedItems]" SelectColumnsMode="Remove">
+                                      <ui:FilterDataTable.Filters>
+                                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="16">
+                                          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(0)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(1)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(2)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(3)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(4)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(5)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(6)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(7)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(8)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(9)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(10)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                          <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Team"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[in_ArrayAreas(11)]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                        </scg:List>
+                                      </ui:FilterDataTable.Filters>
+                                      <ui:FilterDataTable.SelectColumns>
+                                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                          <x:Null />
+                                        </scg:List>
+                                      </ui:FilterDataTable.SelectColumns>
+                                    </ui:FilterDataTable>
+                                    <If Condition="[datExtractedItems.rows.count=0]" DisplayName="If rows remain after filter" sap:VirtualizedContainerService.HintSize="1710,4290.4" sap2010:WorkflowViewState.IdRef="If_7">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="496,316" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign DisplayName="Assign booMoreChecks - TRUE" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Boolean">[booMoreChecks]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign DisplayName="Add 1000 to IDNumber" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[io_Config("IDNumber")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[CInt(io_Config("IDNumber"))+1000]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="1169.6,4130" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="x:String" Name="strNERefNo" />
+                                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)[]" Name="dictTransactionItem" />
+                                            <Variable x:TypeArguments="x:String" Name="strAdditionalSSSI" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign DisplayName="Assign booMoreChecks - FALSE" sap:VirtualizedContainerService.HintSize="1107.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Boolean">[booMoreChecks]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign DisplayName="Assign NE Ref No" sap:VirtualizedContainerService.HintSize="1107.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[strNERefNo]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[datExtractedItems(0)("NE_x0020_Ref_x0020_Number").tostring]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <usal:ReadListItems AttachmentsAction="{x:Null}" ItemsTable="{x:Null}" LocalPathHintText="{x:Null}" RelativeUrlHintText="{x:Null}" CAMLQuery="[&quot;&lt;Query&gt;&quot;+&#xA;&quot;  &lt;Where&gt;&quot;+&#xA;&quot;    &lt;Eq&gt;&quot;+&#xA;&quot;      &lt;FieldRef Name='NE_x0020_Ref_x0020_Number' /&gt;&quot;+&#xA;&quot;      &lt;Value Type='Text'&gt;&quot;+strNERefNo+&quot;&lt;/Value&gt;&quot;+&#xA;&quot;&#x9; &lt;/Eq&gt;&quot;+&#xA;&quot;  &lt;/Where&gt;&quot;+&#xA;&quot;  &lt;RowLimit&gt;1&lt;/RowLimit&gt;&quot;+&#xA;&quot;&lt;/Query&gt;&quot;]" ChooseFile="False" DisplayName="Get List Item - Dict Array Format" sap:VirtualizedContainerService.HintSize="1107.6,140" sap2010:WorkflowViewState.IdRef="ReadListItems_6" ItemsDictArray="[dictTransactionItem]" ListName="Protected Sites Tracker" ShowAttachFiles="False" ShowCAMLQuery="True" ShowCAMLWarning="False" ShowGroupDescription="False" ShowGroupName="False" ShowLibraryName="False" ShowListName="True" ShowLocalPath="False" ShowMove="False" ShowPermissionDropdown="False" ShowPropertiesDictionary="False" ShowRelativeUrl="False" ShowRename="False" ShowUserName="False" />
+                                          <ui:ForEach x:TypeArguments="scg:Dictionary(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each Item in extracted dictionary" sap:VirtualizedContainerService.HintSize="1107.6,2823.2" sap2010:WorkflowViewState.IdRef="ForEach`1_21" Values="[dictTransactionItem]">
+                                            <ui:ForEach.Body>
+                                              <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="item" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1072,2698" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:Int32" Name="intCounter" />
+                                                    <Variable x:TypeArguments="x:String" Name="strAllocatedTo" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign DisplayName="Assign SSSI Site Name" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[item("SSSI_x0020_Sie_x0020_Name")]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[CType(item("SSSI_x0020_Sie_x0020_Name"),Microsoft.SharePoint.Client.FieldLookupValue).LookupValue]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign DisplayName="Assign initial counter" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each lookup value under Additional SSSI" sap:VirtualizedContainerService.HintSize="1010,601.6" sap2010:WorkflowViewState.IdRef="ForEach`1_19" Values="[CType(Item(&quot;Additional_x0020_SSSI_x0020_Site0&quot;), Microsoft.SharePoint.Client.FieldLookupValue())]">
+                                                    <ui:ForEach.Body>
+                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="lookupvalue" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="974.4,476.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <If Condition="[intCounter=1]" DisplayName="If Counter is 1" sap:VirtualizedContainerService.HintSize="912.4,242.8" sap2010:WorkflowViewState.IdRef="If_10">
+                                                            <If.Then>
+                                                              <Assign DisplayName="Assign SSSI Site Name" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:String">[strAdditionalSSSI]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:String">[CType(lookupvalue,Microsoft.SharePoint.Client.FieldLookupValue).LookupValue]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </If.Then>
+                                                            <If.Else>
+                                                              <Assign DisplayName="Add SSSI Site Name" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:String">[strAdditionalSSSI]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:String">[strAdditionalSSSI+";"+CType(lookupvalue,Microsoft.SharePoint.Client.FieldLookupValue).LookupValue]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </If.Else>
+                                                          </If>
+                                                          <Assign DisplayName="Add 1 to Counter" sap:VirtualizedContainerService.HintSize="912.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:Int32">[intCounter+1]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </ui:ForEach.Body>
+                                                  </ui:ForEach>
+                                                  <Assign DisplayName="Assign Additional SSSI Site Name" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[item("Additional_x0020_SSSI_x0020_Site0")]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strAdditionalSSSI]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign DisplayName="Reset intCounter" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <If Condition="[Item(&quot;Allocated_x0020_to&quot;) is Nothing]" DisplayName="If allocated to is nothing:" sap:VirtualizedContainerService.HintSize="1010,569.2" sap2010:WorkflowViewState.IdRef="If_15">
+                                                    <If.Then>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="450,378.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <usal:UpdateListItems AttachmentsAction="{x:Null}" LocalPathHintText="{x:Null}" NumberOfItemsProcessedAtOnce="{x:Null}" NumberOfRowsAffected="{x:Null}" RelativeUrlHintText="{x:Null}" AllowOperationOnAllItems="False" CAMLQuery="[&quot;&lt;Query&gt;&quot;+&#xA;&quot;  &lt;Where&gt;&quot;+&#xA;&quot;    &lt;Eq&gt;&quot;+&#xA;&quot;      &lt;FieldRef Name='NE_x0020_Ref_x0020_Number' /&gt;&quot;+&#xA;&quot;      &lt;Value Type='Text'&gt;&quot;+strNERefNo+&quot;&lt;/Value&gt;&quot;+&#xA;&quot;&#x9; &lt;/Eq&gt;&quot;+&#xA;&quot;  &lt;/Where&gt;&quot;+&#xA;&quot;  &lt;RowLimit&gt;1&lt;/RowLimit&gt;&quot;+&#xA;&quot;&lt;/Query&gt;&quot;]" ChooseFile="False" DisplayName="Update list item - In Progress" sap:VirtualizedContainerService.HintSize="388,202.4" sap2010:WorkflowViewState.IdRef="UpdateListItems_2" ListName="Protected Sites Tracker" PropertiesToAdd="[New Dictionary(Of String, Object) From {&#xD;&#xA;    {&quot;Key_x0020_Notes&quot;, datExtractedItems(0)(&quot;Key_x0020_Notes&quot;).ToString + Environment.NewLine + Environment.NewLine + &quot;Robot - BRE&quot;}&#xD;&#xA;}]" ShowAttachFiles="False" ShowCAMLQuery="True" ShowCAMLWarning="True" ShowGroupDescription="False" ShowGroupName="False" ShowLibraryName="False" ShowListName="True" ShowLocalPath="False" ShowMove="False" ShowPermissionDropdown="False" ShowPropertiesDictionary="True" ShowRelativeUrl="False" ShowRename="False" ShowUserName="False" />
+                                                        <Throw DisplayName="Throw - BRE - No Allocated To" Exception="[new BusinessRuleException(&quot;No 'Allocated to' assigned for NE Ref &quot;+strNERefNo)]" sap:VirtualizedContainerService.HintSize="388,24.8" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                                      </Sequence>
+                                                    </If.Then>
+                                                    <If.Else>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="242.8,104.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </If.Else>
+                                                  </If>
+                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each lookup value in Allocated to" sap:VirtualizedContainerService.HintSize="1010,601.6" sap2010:WorkflowViewState.IdRef="ForEach`1_20" Values="[CType(Item(&quot;Allocated_x0020_to&quot;), Microsoft.SharePoint.Client.FieldLookupValue())]">
+                                                    <ui:ForEach.Body>
+                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="lookupvalue" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="974.4,476.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <If Condition="[intCounter=1]" DisplayName="If Counter is 1" sap:VirtualizedContainerService.HintSize="912.4,242.8" sap2010:WorkflowViewState.IdRef="If_11">
+                                                            <If.Then>
+                                                              <Assign DisplayName="Assign Allocated To" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:String">[strAllocatedTo]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:String">[CType(lookupvalue,Microsoft.SharePoint.Client.FieldLookupValue).LookupValue]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </If.Then>
+                                                            <If.Else>
+                                                              <Assign DisplayName="Add to Allocated To" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:String">[strAllocatedTo]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:String">[strAllocatedTo+";"+CType(lookupvalue,Microsoft.SharePoint.Client.FieldLookupValue).LookupValue]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </If.Else>
+                                                          </If>
+                                                          <Assign DisplayName="Add 1 to Counter" sap:VirtualizedContainerService.HintSize="912.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:Int32">[intCounter+1]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </ui:ForEach.Body>
+                                                  </ui:ForEach>
+                                                  <Assign DisplayName="Assign Allocated To" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[item("Allocated_x0020_to")]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strAllocatedTo]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign DisplayName="Assign Transaction Item" sap:VirtualizedContainerService.HintSize="1010,82.4" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[out_TransactionItem]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[item]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEach.Body>
+                                          </ui:ForEach>
+                                          <If Condition="[io_config(&quot;Tenancy&quot;).ToString=&quot;Dev&quot;]" DisplayName="If Tenancy is Dev" sap:VirtualizedContainerService.HintSize="1107.6,730.8" sap2010:WorkflowViewState.IdRef="If_9">
+                                            <If.Else>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="496,570.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <usal:UpdateListItems AttachmentsAction="{x:Null}" LocalPathHintText="{x:Null}" NumberOfItemsProcessedAtOnce="{x:Null}" NumberOfRowsAffected="{x:Null}" RelativeUrlHintText="{x:Null}" AllowOperationOnAllItems="False" CAMLQuery="[&quot;&lt;Query&gt;&quot;+&#xA;&quot;  &lt;Where&gt;&quot;+&#xA;&quot;    &lt;Eq&gt;&quot;+&#xA;&quot;      &lt;FieldRef Name='NE_x0020_Ref_x0020_Number' /&gt;&quot;+&#xA;&quot;      &lt;Value Type='Text'&gt;&quot;+strNERefNo+&quot;&lt;/Value&gt;&quot;+&#xA;&quot;&#x9; &lt;/Eq&gt;&quot;+&#xA;&quot;  &lt;/Where&gt;&quot;+&#xA;&quot;  &lt;RowLimit&gt;1&lt;/RowLimit&gt;&quot;+&#xA;&quot;&lt;/Query&gt;&quot;]" ChooseFile="False" DisplayName="Update list item - In Progress" sap:VirtualizedContainerService.HintSize="434,202.4" sap2010:WorkflowViewState.IdRef="UpdateListItems_1" ListName="Protected Sites Tracker" PropertiesToAdd="[New Dictionary(Of String, Object) From {&#xA;    {&quot;Key_x0020_Notes&quot;, datExtractedItems(0)(&quot;Key_x0020_Notes&quot;).ToString + Environment.NewLine + Environment.NewLine + &quot;Robot in Progress&quot;}&#xA;}]" ShowAttachFiles="False" ShowCAMLQuery="True" ShowCAMLWarning="True" ShowGroupDescription="False" ShowGroupName="False" ShowLibraryName="False" ShowListName="True" ShowLocalPath="False" ShowMove="False" ShowPermissionDropdown="False" ShowPropertiesDictionary="True" ShowRelativeUrl="False" ShowRename="False" ShowUserName="False" />
+                                                <Assign DisplayName="Update Key Notes" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Object">[datExtractedItems(0)("Key_x0020_Notes")]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Object">[datExtractedItems(0)("Key_x0020_Notes").ToString + Environment.NewLine + Environment.NewLine + "Robot in Progress"]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <ui:LogMessage DisplayName="Log Message - In Progress" sap:VirtualizedContainerService.HintSize="434,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;In Progress Update Added&quot;]" />
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="2475.6,22.8" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Assign DisplayName="Assign no more items:" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_10">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[booNoMoreItems]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </usa:SharepointApplicationScope.Body>
+    </usa:SharepointApplicationScope>
+  </Sequence>
+</Activity>
