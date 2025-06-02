@@ -7,21 +7,16 @@
       },
       "Assemblies": [
         "C:\\Users\\kl000096\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net45/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\credentialmanagement\\1.0.2\\lib/net35/CredentialManagement.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\credentials\\1.0.2\\lib/net45/Credentials.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\csvhelper\\16.0.0\\lib/net45/CsvHelper.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/net20/ExcelNumberFormat.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.formatters\\2.0.35\\lib/net451/H.Formatters.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib/net451/H.Formatters.BinaryFormatter.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.pipes\\2.0.35\\lib/net461/H.Pipes.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\humanizer.core\\2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/net461/Irony.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\logging\\1.0.16\\lib/net45/Logging.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\logging\\1.0.16\\lib/net45/Logging_Expressions_16991442.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\logging\\1.0.16\\lib/net45/Logging_Expressions_21170186.dll",
@@ -39,6 +34,7 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/net461/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
@@ -53,25 +49,34 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.native.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/net45/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.Core.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\nlog\\4.5.11\\lib/net45/NLog.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXmlFormats.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\oracle.manageddataaccess\\19.11.0\\lib/net40/Oracle.ManagedDataAccess.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/net40/BouncyCastle.Crypto.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\restsharp\\106.15.0\\lib/net452/RestSharp.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netstandard2.0/SixLabors.Fonts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\runtimes/win/lib/net461/System.Data.SqlClient.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib/net461/System.Formats.Asn1.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes/win/lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1\\lib/net461/System.IO.Packaging.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib/net461/System.IO.Pipelines.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0\\lib/net46/System.IO.UnmanagedMemoryStream.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.net.http\\4.3.4\\runtimes/win/lib/net46/System.Net.Http.dll",
@@ -92,20 +97,18 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\20.4.7472.17184\\lib/UiPath.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\23.10.81.50671\\lib/net45/UiPath.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net461/UiPath.Activities.RuntimeGovernance.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\lib/net461/UiPath.Credentials.Activities.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.database.activities\\1.6.1\\lib/net461/UiPath.Data.ConnectionUI.Dialog.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.database.activities\\1.6.1\\lib/net461/UiPath.Database.Activities.Design.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.database.activities\\1.6.1\\lib/net461/UiPath.Database.Activities.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.database.activities\\1.6.1\\lib/net461/UiPath.Database.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.database.activities\\1.6.1\\lib/net461/runtimes/win-x86/native/sni.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Office.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/System.Resources.Extensions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/UiPath.Form.Activities.Design.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/UiPath.Form.Activities.dll",
@@ -114,7 +117,18 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.7\\lib/net461/UiPath.Form.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.7\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.7\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.6.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net461/UiPath.ImageProcessingInterop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/OFFICE.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/UiPath.OfficeLibs.Package.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/net461/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.persistence.activities\\1.4.0\\lib/net461/UiPath.Orchestrator.Service.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.persistence.activities\\1.4.0\\lib/net461/UiPath.Persistence.Activities.Design.dll",
@@ -126,34 +140,31 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.OrchestratorClient.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.System.Activities.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Core.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.Semantic.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2\\lib/net461/XLParser.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\logging\\1.0.16"
     },
@@ -164,20 +175,15 @@
       },
       "Assemblies": [
         "C:\\Users\\kl000096\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net45/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\credentialmanagement\\1.0.2\\lib/net35/CredentialManagement.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\csvhelper\\16.0.0\\lib/net45/CsvHelper.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/net20/ExcelNumberFormat.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.formatters\\2.0.35\\lib/net451/H.Formatters.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib/net451/H.Formatters.BinaryFormatter.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\h.pipes\\2.0.35\\lib/net461/H.Pipes.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\humanizer.core\\2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/net461/Irony.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.36\\lib/net461/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\6.0.36\\lib/net461/Microsoft.AspNetCore.Http.Connections.Client.dll",
@@ -186,6 +192,7 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/net461/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
@@ -200,24 +207,33 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.native.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/net45/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.Core.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\nlog\\4.5.11\\lib/net45/NLog.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\pop.ups\\1.0.3\\lib/net45/Pop Ups.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/net40/BouncyCastle.Crypto.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\restsharp\\106.15.0\\lib/net452/RestSharp.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netstandard2.0/SixLabors.Fonts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib/net461/System.Formats.Asn1.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes/win/lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1\\lib/net461/System.IO.Packaging.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib/net461/System.IO.Pipelines.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0\\lib/net46/System.IO.UnmanagedMemoryStream.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.net.http\\4.3.4\\runtimes/win/lib/net46/System.Net.Http.dll",
@@ -238,15 +254,13 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\20.4.7472.17184\\lib/UiPath.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\23.10.81.50671\\lib/net45/UiPath.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net461/UiPath.Activities.RuntimeGovernance.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\lib/net461/UiPath.Credentials.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Office.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/System.Resources.Extensions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/UiPath.Form.Activities.Design.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.form.activities\\2.0.7\\lib/net461/UiPath.Form.Activities.dll",
@@ -255,7 +269,18 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.7\\lib/net461/UiPath.Form.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.7\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.7\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.6.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net461/UiPath.ImageProcessingInterop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/OFFICE.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/UiPath.OfficeLibs.Package.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/net461/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.persistence.activities\\1.4.0\\lib/net461/UiPath.Orchestrator.Service.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.persistence.activities\\1.4.0\\lib/net461/UiPath.Persistence.Activities.Design.dll",
@@ -267,62 +292,91 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.OrchestratorClient.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.System.Activities.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Core.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.Semantic.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2\\lib/net461/XLParser.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\pop.ups\\1.0.3"
     },
     {
       "Package": {
         "Id": "UiPath.Excel.Activities",
-        "Version": "2.11.4"
+        "Version": "2.24.4"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\csvhelper\\16.0.0\\lib/net45/CsvHelper.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/net45/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib/net45/NPOI.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/net461/Irony.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/net40/BouncyCastle.Crypto.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netstandard2.0/SixLabors.Fonts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib/net461/System.Formats.Asn1.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes/win/lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1\\lib/net461/System.IO.Packaging.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0\\lib/net46/System.IO.UnmanagedMemoryStream.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.net.http\\4.3.4\\runtimes/win/lib/net46/System.Net.Http.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/Office.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib/net461/UiPath.Excel.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/OFFICE.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/UiPath.OfficeLibs.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/net461/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.platform\\24.11.1\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2\\lib/net461/XLParser.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4"
     },
     {
       "Package": {
@@ -340,7 +394,7 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
@@ -377,7 +431,7 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib/net461/System.Resources.Extensions.dll",
@@ -441,7 +495,7 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.native.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
@@ -479,19 +533,17 @@
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "20.4.2"
+        "Version": "23.10.11"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net45/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\humanizer.core\\2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/net461/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\nlog\\4.5.11\\lib/net45/NLog.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
@@ -504,42 +556,43 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\20.4.7472.17184\\lib/UiPath.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.6.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\23.10.81.50671\\lib/net45/UiPath.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net461/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net461/UiPath.ImageProcessingInterop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib/net461/UiPath.OCR.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net461/UiPath.OCR.Contracts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/net461/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.platform\\24.11.1\\lib/net461/UiPath.Platform.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Core.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib/net461/UiPath.Vision.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.Semantic.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net461/UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11"
     },
     {
       "Package": {
         "Id": "UiPath.WebAPI.Activities",
-        "Version": "1.18.0"
+        "Version": "1.20.1"
       },
       "Assemblies": [
         "C:\\Users\\kl000096\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net45/ICSharpCode.AvalonEdit.dll",
@@ -554,12 +607,12 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
         "C:\\Users\\kl000096\\.nuget\\packages\\uipath.platform\\24.11.1\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net461/UiPath.Web.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1"
     },
     {
       "Package": {
@@ -612,6 +665,138 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\windowsazure.storage\\7.0.0\\lib/net40/Microsoft.WindowsAzure.Storage.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipathteam.sharepoint.activities\\1.7.0"
+    },
+    {
+      "Package": {
+        "Id": "DRACOE.Microsoft.Graph",
+        "Version": "1.0.22"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net45/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\csvhelper\\16.0.0\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_12192121.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_12664487.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_14814926.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_15334236.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_15702541.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_17057204.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_19356831.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_21467174.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_2217649.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_26456128.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_30015438.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_3016440.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_3044255.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_307252.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_31641985.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_33902984.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_36229629.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_38560603.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_39703760.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_43478446.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_44632587.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_45883064.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_48149502.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_5026204.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_50807463.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_52662304.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_54725367.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_5758532.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_59377419.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_61604366.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_63530057.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib/net45/DRACOE Microsoft Graph_Expressions_66589524.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/net461/Irony.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.36\\lib/net461/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\6.0.36\\lib/net461/Microsoft.AspNetCore.Http.Connections.Client.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.36\\lib/net461/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Client.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Client.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net461/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.0.1\\lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.features\\6.0.36\\lib/net461/Microsoft.Extensions.Features.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.logging\\6.0.1\\lib/net461/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.options\\6.0.1\\lib/net461/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1\\lib/net461/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/net451/microsoft.management.infrastructure.native.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/net40/BouncyCastle.Crypto.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\restsharp\\106.15.0\\lib/net452/RestSharp.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netstandard2.0/SixLabors.Fonts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.2\\lib/net461/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib/net461/System.Formats.Asn1.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes/win/lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1\\lib/net461/System.IO.Packaging.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib/net461/System.IO.Pipelines.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0\\lib/net46/System.IO.UnmanagedMemoryStream.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.net.http\\4.3.4\\runtimes/win/lib/net46/System.Net.Http.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.net.sockets\\4.3.0\\lib/net46/System.Net.Sockets.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\lib/net461/System.Reflection.Metadata.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.text.encodings.web\\6.0.1\\lib/net461/System.Text.Encodings.Web.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.text.json\\6.0.11\\lib/net461/System.Text.Json.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.channels\\6.0.0\\lib/net461/System.Threading.Channels.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net461/UiPath.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/OFFICE.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net461/UiPath.OfficeLibs.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/net461/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.platform\\24.11.1\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities\\24.10.7\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.7\\lib/net461/UiPath.System.Activities.Package.Runtime.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.system.activities.runtime.legacy\\24.10.7\\lib/net461/UiPath.System.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net461/UiPath.Web.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2\\lib/net461/XLParser.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22"
     }
   ],
   "Conflicts": [],
@@ -633,11 +818,39 @@
     },
     "ClosedXML": {
       "Id": "ClosedXML",
-      "Version": "0.87.1",
+      "Version": "0.100.3",
       "Dependencies": [
         {
           "Item1": "DocumentFormat.OpenXml",
-          "Item2": "[2.5.0, )"
+          "Item2": "[2.16.0, )"
+        },
+        {
+          "Item1": "ExcelNumberFormat",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "SixLabors.Fonts",
+          "Item2": "[1.0.0-beta18, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.IO.Packaging",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "XLParser",
+          "Item2": "[1.5.2, )"
         }
       ]
     },
@@ -700,12 +913,30 @@
     },
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
-      "Version": "2.5.0",
+      "Version": "2.16.0",
       "Dependencies": []
     },
-    "Extended.Wpf.Toolkit": {
-      "Id": "Extended.Wpf.Toolkit",
-      "Version": "2.8.0",
+    "DRACOE.Microsoft.Graph": {
+      "Id": "DRACOE.Microsoft.Graph",
+      "Version": "1.0.22",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.Excel.Activities",
+          "Item2": "[2.24.4, )"
+        },
+        {
+          "Item1": "UiPath.System.Activities",
+          "Item2": "[21.10.3, )"
+        },
+        {
+          "Item1": "UiPath.WebAPI.Activities",
+          "Item2": "[1.20.1, )"
+        }
+      ]
+    },
+    "ExcelNumberFormat": {
+      "Id": "ExcelNumberFormat",
+      "Version": "1.1.0",
       "Dependencies": []
     },
     "H.Formatters": {
@@ -737,14 +968,14 @@
         }
       ]
     },
-    "Humanizer.Core": {
-      "Id": "Humanizer.Core",
-      "Version": "2.4.2",
-      "Dependencies": []
-    },
     "interop.domino.dll": {
       "Id": "interop.domino.dll",
       "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Irony.NetCore": {
+      "Id": "Irony.NetCore",
+      "Version": "1.0.11",
       "Dependencies": []
     },
     "Logging": {
@@ -948,6 +1179,24 @@
         {
           "Item1": "System.Spatial",
           "Item2": "[5.6.4, )"
+        }
+      ]
+    },
+    "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+      "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+      "Version": "7.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.20, 3.0.0)"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime.Azure",
+          "Item2": "[3.3.18, 4.0.0)"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
         }
       ]
     },
@@ -1296,6 +1545,20 @@
         }
       ]
     },
+    "Microsoft.Rest.ClientRuntime.Azure": {
+      "Id": "Microsoft.Rest.ClientRuntime.Azure",
+      "Version": "3.3.18",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.17, 3.0.0)"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[6.0.8, )"
+        }
+      ]
+    },
     "Microsoft.SharePoint2016.CSOM": {
       "Id": "Microsoft.SharePoint2016.CSOM",
       "Version": "16.0.4690.1000",
@@ -1304,11 +1567,6 @@
     "Microsoft.VisualBasic": {
       "Id": "Microsoft.VisualBasic",
       "Version": "10.3.0",
-      "Dependencies": []
-    },
-    "Microsoft.VisualStudio.OLE.Interop": {
-      "Id": "Microsoft.VisualStudio.OLE.Interop",
-      "Version": "16.7.30328.74",
       "Dependencies": []
     },
     "Microsoft.Web.WebView2": {
@@ -1321,19 +1579,33 @@
       "Version": "13.0.3",
       "Dependencies": []
     },
+    "NLog": {
+      "Id": "NLog",
+      "Version": "4.5.11",
+      "Dependencies": []
+    },
     "NPOI": {
       "Id": "NPOI",
-      "Version": "2.4.1",
+      "Version": "2.5.6",
       "Dependencies": [
         {
           "Item1": "SharpZipLib",
-          "Item2": "[1.0.0, )"
+          "Item2": "[1.3.3, )"
+        },
+        {
+          "Item1": "Portable.BouncyCastle",
+          "Item2": "[1.8.9, )"
         }
       ]
     },
     "Oracle.ManagedDataAccess": {
       "Id": "Oracle.ManagedDataAccess",
       "Version": "19.11.0",
+      "Dependencies": []
+    },
+    "Polly": {
+      "Id": "Polly",
+      "Version": "7.1.0",
       "Dependencies": []
     },
     "Pop.Ups": {
@@ -1373,6 +1645,11 @@
           "Item2": "[1.9.2, )"
         }
       ]
+    },
+    "Portable.BouncyCastle": {
+      "Id": "Portable.BouncyCastle",
+      "Version": "1.8.9",
+      "Dependencies": []
     },
     "RestSharp": {
       "Id": "RestSharp",
@@ -1445,8 +1722,55 @@
     },
     "SharpZipLib": {
       "Id": "SharpZipLib",
-      "Version": "1.3.3",
-      "Dependencies": []
+      "Version": "1.4.2",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.2, )"
+        }
+      ]
+    },
+    "SixLabors.Fonts": {
+      "Id": "SixLabors.Fonts",
+      "Version": "1.0.0-beta18",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.UnmanagedMemoryStream",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Parallel",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        }
+      ]
     },
     "System.Buffers": {
       "Id": "System.Buffers",
@@ -1484,8 +1808,26 @@
     },
     "System.Drawing.Common": {
       "Id": "System.Drawing.Common",
-      "Version": "5.0.2",
+      "Version": "6.0.0",
       "Dependencies": []
+    },
+    "System.Formats.Asn1": {
+      "Id": "System.Formats.Asn1",
+      "Version": "6.0.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        }
+      ]
     },
     "System.IdentityModel.Tokens.Jwt": {
       "Id": "System.IdentityModel.Tokens.Jwt",
@@ -1510,6 +1852,21 @@
       "Version": "3.0.10",
       "Dependencies": []
     },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.FileSystem.Primitives": {
+      "Id": "System.IO.FileSystem.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Packaging": {
+      "Id": "System.IO.Packaging",
+      "Version": "6.0.1",
+      "Dependencies": []
+    },
     "System.IO.Pipelines": {
       "Id": "System.IO.Pipelines",
       "Version": "6.0.3",
@@ -1525,6 +1882,16 @@
         {
           "Item1": "System.Threading.Tasks.Extensions",
           "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "System.IO.UnmanagedMemoryStream": {
+      "Id": "System.IO.UnmanagedMemoryStream",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
         }
       ]
     },
@@ -1706,6 +2073,11 @@
         }
       ]
     },
+    "System.Text.RegularExpressions": {
+      "Id": "System.Text.RegularExpressions",
+      "Version": "4.3.1",
+      "Dependencies": []
+    },
     "System.Threading.Channels": {
       "Id": "System.Threading.Channels",
       "Version": "6.0.0",
@@ -1731,6 +2103,11 @@
         }
       ]
     },
+    "System.Threading.Tasks.Parallel": {
+      "Id": "System.Threading.Tasks.Parallel",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
     "System.ValueTuple": {
       "Id": "System.ValueTuple",
       "Version": "4.5.0",
@@ -1738,8 +2115,18 @@
     },
     "UiPath": {
       "Id": "UiPath",
-      "Version": "20.4.7472.17184",
+      "Version": "23.10.81.50671",
       "Dependencies": []
+    },
+    "UiPath.Activities.RuntimeGovernance": {
+      "Id": "UiPath.Activities.RuntimeGovernance",
+      "Version": "1.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
     },
     "UiPath.Credentials.Activities": {
       "Id": "UiPath.Credentials.Activities",
@@ -1771,11 +2158,11 @@
     },
     "UiPath.Excel.Activities": {
       "Id": "UiPath.Excel.Activities",
-      "Version": "2.11.4",
+      "Version": "2.24.4",
       "Dependencies": [
         {
           "Item1": "ClosedXML",
-          "Item2": "[0.87.1, )"
+          "Item2": "[0.100.3, )"
         },
         {
           "Item1": "CsvHelper",
@@ -1783,15 +2170,51 @@
         },
         {
           "Item1": "DocumentFormat.OpenXml",
-          "Item2": "[2.5.0, )"
-        },
-        {
-          "Item1": "Microsoft.VisualStudio.OLE.Interop",
-          "Item2": "[16.7.30328.74, )"
+          "Item2": "[2.16.0, )"
         },
         {
           "Item1": "NPOI",
-          "Item2": "[2.4.1, )"
+          "Item2": "[2.5.6, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.4.2, )"
+        },
+        {
+          "Item1": "System.Drawing.Common",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Formats.Asn1",
+          "Item2": "[6.0.1, )"
+        },
+        {
+          "Item1": "System.IO.Packaging",
+          "Item2": "[6.0.1, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.4, )"
+        },
+        {
+          "Item1": "System.Text.Encoding.CodePages",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "UiPath.OfficeLibs",
+          "Item2": "[1.0.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[24.10.3, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[2.1.3, )"
         }
       ]
     },
@@ -1877,6 +2300,11 @@
         }
       ]
     },
+    "UiPath.ImageProcessing": {
+      "Id": "UiPath.ImageProcessing",
+      "Version": "23.4.0",
+      "Dependencies": []
+    },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
       "Version": "1.8.6",
@@ -1899,9 +2327,56 @@
         }
       ]
     },
+    "UiPath.OCR.Activities": {
+      "Id": "UiPath.OCR.Activities",
+      "Version": "3.17.2",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+          "Item2": "[7.0.1, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.24, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "NLog",
+          "Item2": "[4.5.11, )"
+        },
+        {
+          "Item1": "Polly",
+          "Item2": "[7.1.0, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.16.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[23.4.0, )"
+        }
+      ]
+    },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
-      "Version": "2.6.0",
+      "Version": "2.16.0",
+      "Dependencies": []
+    },
+    "UiPath.OfficeLibs": {
+      "Id": "UiPath.OfficeLibs",
+      "Version": "1.0.0",
       "Dependencies": []
     },
     "UiPath.OpenTelemetry.Contracts": {
@@ -2120,71 +2595,77 @@
     },
     "UiPath.UIAutomation.Activities": {
       "Id": "UiPath.UIAutomation.Activities",
-      "Version": "20.4.2",
+      "Version": "23.10.11",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.UIAutomation.Activities.Runtime",
+          "Item2": "[23.10.11, 23.10.11]"
+        }
+      ]
+    },
+    "UiPath.UIAutomation.Activities.Runtime": {
+      "Id": "UiPath.UIAutomation.Activities.Runtime",
+      "Version": "23.10.11",
       "Dependencies": [
         {
           "Item1": "UiPath",
-          "Item2": "[20.4.7472.17184, 20.4.7472.17184]"
+          "Item2": "[23.10.81.50671, 23.10.81.50671]"
         },
         {
           "Item1": "UiPath.Vision",
-          "Item2": "[2.0.3, )"
+          "Item2": "[3.11.1, )"
         },
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.6.0, )"
+          "Item2": "[2.16.0, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Activities",
+          "Item2": "[3.17.2, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[20.4.0, )"
-        },
-        {
-          "Item1": "AvalonEdit",
-          "Item2": "[5.0.3, )"
-        },
-        {
-          "Item1": "Extended.Wpf.Toolkit",
-          "Item2": "[2.8.0, )"
-        },
-        {
-          "Item1": "Humanizer.Core",
-          "Item2": "[2.4.2, )"
+          "Item2": "[23.10.0, )"
         },
         {
           "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
+          "Item2": "[13.0.1, )"
         },
         {
           "Item1": "System.IO.Abstractions",
           "Item2": "[3.0.10, )"
         },
         {
-          "Item1": "System.ValueTuple",
-          "Item2": "[4.5.0, )"
+          "Item1": "UiPath.ImageProcessing",
+          "Item2": "[23.4.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.2.20, )"
+          "Item2": "[1.5.3, )"
+        },
+        {
+          "Item1": "UiPath.Activities.RuntimeGovernance",
+          "Item2": "[1.1.6, )"
         }
       ]
     },
     "UiPath.Vision": {
       "Id": "UiPath.Vision",
-      "Version": "2.0.3",
+      "Version": "3.11.1",
       "Dependencies": [
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.6.0, )"
+          "Item2": "[2.16.0, )"
         }
       ]
     },
     "UiPath.WebAPI.Activities": {
       "Id": "UiPath.WebAPI.Activities",
-      "Version": "1.18.0",
+      "Version": "1.20.1",
       "Dependencies": [
         {
-          "Item1": "UiPath.WebAPI.Runtime",
-          "Item2": "[1.18.0, )"
+          "Item1": "UiPath.WebAPI.Activities.Runtime",
+          "Item2": "[1.20.1, )"
         },
         {
           "Item1": "AvalonEdit",
@@ -2208,9 +2689,9 @@
         }
       ]
     },
-    "UiPath.WebAPI.Runtime": {
-      "Id": "UiPath.WebAPI.Runtime",
-      "Version": "1.18.0",
+    "UiPath.WebAPI.Activities.Runtime": {
+      "Id": "UiPath.WebAPI.Activities.Runtime",
+      "Version": "1.20.1",
       "Dependencies": [
         {
           "Item1": "Microsoft.CSharp",
@@ -2302,6 +2783,16 @@
           "Item2": "[1.0.0, )"
         }
       ]
+    },
+    "XLParser": {
+      "Id": "XLParser",
+      "Version": "1.5.2",
+      "Dependencies": [
+        {
+          "Item1": "Irony.NetCore",
+          "Item2": "[1.0.11, )"
+        }
+      ]
     }
   },
   "AllPackages": [
@@ -2338,12 +2829,12 @@
     {
       "Package": {
         "Id": "ClosedXML",
-        "Version": "0.87.1"
+        "Version": "0.100.3"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.87.1\\lib\\net40\\ClosedXML.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3\\lib\\netstandard2.0\\ClosedXML.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.87.1"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\closedxml\\0.100.3"
     },
     {
       "Package": {
@@ -2378,27 +2869,64 @@
     {
       "Package": {
         "Id": "DocumentFormat.OpenXml",
-        "Version": "2.5.0"
+        "Version": "2.16.0"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib\\DocumentFormat.OpenXml.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib\\net46\\DocumentFormat.OpenXml.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.5.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\documentformat.openxml\\2.16.0"
     },
     {
       "Package": {
-        "Id": "Extended.Wpf.Toolkit",
-        "Version": "2.8.0"
+        "Id": "DRACOE.Microsoft.Graph",
+        "Version": "1.0.22"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.Toolkit.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_12192121.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_12664487.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_14814926.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_15334236.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_15702541.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_17057204.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_19356831.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_21467174.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_2217649.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_26456128.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_30015438.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_3016440.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_3044255.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_307252.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_31641985.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_33902984.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_36229629.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_38560603.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_39703760.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_43478446.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_44632587.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_45883064.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_48149502.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_5026204.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_50807463.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_52662304.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_54725367.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_5758532.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_59377419.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_61604366.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_63530057.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22\\lib\\net45\\DRACOE Microsoft Graph_Expressions_66589524.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\dracoe.microsoft.graph\\1.0.22"
+    },
+    {
+      "Package": {
+        "Id": "ExcelNumberFormat",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib\\net20\\ExcelNumberFormat.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\excelnumberformat\\1.1.0"
     },
     {
       "Package": {
@@ -2432,16 +2960,6 @@
     },
     {
       "Package": {
-        "Id": "Humanizer.Core",
-        "Version": "2.4.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\humanizer.core\\2.4.2\\lib\\netstandard2.0\\Humanizer.dll"
-      ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\humanizer.core\\2.4.2"
-    },
-    {
-      "Package": {
         "Id": "interop.domino.dll",
         "Version": "1.0.0"
       },
@@ -2449,6 +2967,16 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\interop.domino.dll\\1.0.0\\lib\\Interop.Domino.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\interop.domino.dll\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Irony.NetCore",
+        "Version": "1.0.11"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11\\lib\\net461\\Irony.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\irony.netcore\\1.0.11"
     },
     {
       "Package": {
@@ -2577,6 +3105,16 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.activedirectory.graphclient\\2.1.0\\lib\\portable-net4+sl5+win+wpa+wp8\\Microsoft.Azure.ActiveDirectory.GraphClient.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.activedirectory.graphclient\\2.1.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+        "Version": "7.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib\\net461\\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1"
     },
     {
       "Package": {
@@ -2876,6 +3414,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Rest.ClientRuntime.Azure",
+        "Version": "3.3.18"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib\\net452\\Microsoft.Rest.ClientRuntime.Azure.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.SharePoint2016.CSOM",
         "Version": "16.0.4690.1000"
       },
@@ -2907,16 +3455,6 @@
     },
     {
       "Package": {
-        "Id": "Microsoft.VisualStudio.OLE.Interop",
-        "Version": "16.7.30328.74"
-      },
-      "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib\\net45\\Microsoft.VisualStudio.OLE.Interop.dll"
-      ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74"
-    },
-    {
-      "Package": {
         "Id": "Microsoft.Web.WebView2",
         "Version": "1.0.1264.42"
       },
@@ -2939,16 +3477,26 @@
     },
     {
       "Package": {
-        "Id": "NPOI",
-        "Version": "2.4.1"
+        "Id": "NLog",
+        "Version": "4.5.11"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OOXML.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\nlog\\4.5.11\\lib\\net45\\NLog.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.4.1"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\nlog\\4.5.11"
+    },
+    {
+      "Package": {
+        "Id": "NPOI",
+        "Version": "2.5.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib\\net45\\NPOI.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib\\net45\\NPOI.OOXML.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib\\net45\\NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6\\lib\\net45\\NPOI.OpenXmlFormats.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\npoi\\2.5.6"
     },
     {
       "Package": {
@@ -2962,6 +3510,16 @@
     },
     {
       "Package": {
+        "Id": "Polly",
+        "Version": "7.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\polly\\7.1.0\\lib\\netstandard2.0\\Polly.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\polly\\7.1.0"
+    },
+    {
+      "Package": {
         "Id": "Pop.Ups",
         "Version": "1.0.3"
       },
@@ -2969,6 +3527,16 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\pop.ups\\1.0.3\\lib\\net45\\Pop Ups.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\pop.ups\\1.0.3"
+    },
+    {
+      "Package": {
+        "Id": "Portable.BouncyCastle",
+        "Version": "1.8.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib\\net40\\BouncyCastle.Crypto.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\portable.bouncycastle\\1.8.9"
     },
     {
       "Package": {
@@ -3004,12 +3572,22 @@
     {
       "Package": {
         "Id": "SharpZipLib",
-        "Version": "1.3.3"
+        "Version": "1.4.2"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3\\lib\\net45\\ICSharpCode.SharpZipLib.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2\\lib\\netstandard2.0\\ICSharpCode.SharpZipLib.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.3.3"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\sharpziplib\\1.4.2"
+    },
+    {
+      "Package": {
+        "Id": "SixLabors.Fonts",
+        "Version": "1.0.0-beta18"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib\\netstandard2.0\\SixLabors.Fonts.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18"
     },
     {
       "Package": {
@@ -3054,12 +3632,22 @@
     {
       "Package": {
         "Id": "System.Drawing.Common",
-        "Version": "5.0.2"
+        "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib\\net461\\System.Drawing.Common.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib\\net461\\System.Drawing.Common.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\5.0.2"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.drawing.common\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Formats.Asn1",
+        "Version": "6.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib\\net461\\System.Formats.Asn1.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.formats.asn1\\6.0.1"
     },
     {
       "Package": {
@@ -3083,6 +3671,36 @@
     },
     {
       "Package": {
+        "Id": "System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes\\win\\lib\\net46\\System.IO.Compression.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.io.compression\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.FileSystem.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\lib\\net46\\System.IO.FileSystem.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Packaging",
+        "Version": "6.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1\\lib\\net461\\System.IO.Packaging.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.io.packaging\\6.0.1"
+    },
+    {
+      "Package": {
         "Id": "System.IO.Pipelines",
         "Version": "6.0.3"
       },
@@ -3090,6 +3708,16 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib\\net461\\System.IO.Pipelines.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.io.pipelines\\6.0.3"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.UnmanagedMemoryStream",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0\\lib\\net46\\System.IO.UnmanagedMemoryStream.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.io.unmanagedmemorystream\\4.3.0"
     },
     {
       "Package": {
@@ -3263,6 +3891,16 @@
     },
     {
       "Package": {
+        "Id": "System.Text.RegularExpressions",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.text.regularexpressions\\4.3.1\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.text.regularexpressions\\4.3.1"
+    },
+    {
+      "Package": {
         "Id": "System.Threading.Channels",
         "Version": "6.0.0"
       },
@@ -3293,6 +3931,16 @@
     },
     {
       "Package": {
+        "Id": "System.Threading.Tasks.Parallel",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.ValueTuple",
         "Version": "4.5.0"
       },
@@ -3304,12 +3952,22 @@
     {
       "Package": {
         "Id": "UiPath",
-        "Version": "20.4.7472.17184"
+        "Version": "23.10.81.50671"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\20.4.7472.17184\\lib\\UiPath.Interop.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\23.10.81.50671\\lib\\net45\\UiPath.Interop.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\20.4.7472.17184"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath\\23.10.81.50671"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Activities.RuntimeGovernance",
+        "Version": "1.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib\\net461\\UiPath.Activities.RuntimeGovernance.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6"
     },
     {
       "Package": {
@@ -3337,18 +3995,15 @@
     {
       "Package": {
         "Id": "UiPath.Excel.Activities",
-        "Version": "2.11.4"
+        "Version": "2.24.4"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\Office.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\UiPath.Excel.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4\\lib\\net461\\UiPath.Excel.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net461\\UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net461\\UiPath.Excel.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net461\\UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net461\\UiPath.Excel.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.11.4"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.excel.activities\\2.24.4"
     },
     {
       "Package": {
@@ -3387,6 +4042,16 @@
     },
     {
       "Package": {
+        "Id": "UiPath.ImageProcessing",
+        "Version": "23.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib\\net461\\UiPath.ImageProcessingInterop.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.imageprocessing\\23.4.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.8.6"
       },
@@ -3401,13 +4066,41 @@
     },
     {
       "Package": {
-        "Id": "UiPath.OCR.Contracts",
-        "Version": "2.6.0"
+        "Id": "UiPath.OCR.Activities",
+        "Version": "3.17.2"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.6.0\\lib\\net461\\UiPath.OCR.Contracts.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib\\net461\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib\\net461\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2\\lib\\net461\\UiPath.OCR.Core.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.6.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.activities\\3.17.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OCR.Contracts",
+        "Version": "2.16.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib\\net461\\UiPath.OCR.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OfficeLibs",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\OFFICE.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net461\\UiPath.OfficeLibs.Package.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.officelibs\\1.0.0"
     },
     {
       "Package": {
@@ -3486,61 +4179,71 @@
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "20.4.2"
+        "Version": "23.10.11"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.CV.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.CV.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2\\lib\\net461\\UiPath.Wizards.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11\\lib\\net461\\UiPath.Wizards.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.2"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities.Runtime",
+        "Version": "23.10.11"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.CV.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.CV.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.Semantic.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11\\lib\\net461\\UiPath.UiAutomation.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.11"
     },
     {
       "Package": {
         "Id": "UiPath.Vision",
-        "Version": "2.0.3"
+        "Version": "3.11.1"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib\\net461\\UiPath.Vision.Core.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3\\lib\\net461\\UiPath.Vision.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.Core.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net461\\UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\2.0.3"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.vision\\3.11.1"
     },
     {
       "Package": {
         "Id": "UiPath.WebAPI.Activities",
-        "Version": "1.18.0"
+        "Version": "1.20.1"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib\\net461\\UiPath.Web.Activities.Design.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0\\lib\\net461\\UiPath.Web.Activities.RulesLibrary.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib\\net461\\UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib\\net461\\UiPath.Web.Activities.RulesLibrary.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.18.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities\\1.20.1"
     },
     {
       "Package": {
-        "Id": "UiPath.WebAPI.Runtime",
-        "Version": "1.18.0"
+        "Id": "UiPath.WebAPI.Activities.Runtime",
+        "Version": "1.20.1"
       },
       "Assemblies": [
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib\\net461\\UiPath.Web.Activities.dll",
-        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib\\net461\\UiPath.Web.dll"
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib\\net461\\UiPath.Web.Activities.dll",
+        "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib\\net461\\UiPath.Web.dll"
       ],
-      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0"
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1"
     },
     {
       "Package": {
@@ -3571,6 +4274,16 @@
         "C:\\Users\\kl000096\\.nuget\\packages\\windowsazure.storage\\7.0.0\\lib\\net40\\Microsoft.WindowsAzure.Storage.dll"
       ],
       "Path": "C:\\Users\\kl000096\\.nuget\\packages\\windowsazure.storage\\7.0.0"
+    },
+    {
+      "Package": {
+        "Id": "XLParser",
+        "Version": "1.5.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2\\lib\\net461\\XLParser.dll"
+      ],
+      "Path": "C:\\Users\\kl000096\\.nuget\\packages\\xlparser\\1.5.2"
     }
   ]
 }

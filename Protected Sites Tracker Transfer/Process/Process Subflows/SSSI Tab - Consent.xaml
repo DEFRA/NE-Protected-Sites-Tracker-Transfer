@@ -5,7 +5,7 @@
     <x:Property Name="io_Config" Type="InOutArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_intSSSICounter" Type="InArgument(x:Int32)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1240.8,4462.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,4504.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -40,6 +40,7 @@
       <x:String>System.Xml.Linq</x:String>
       <x:String>System.Net.Mail</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -86,22 +87,22 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
       <AssemblyReference>System.Configuration.Install</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1248.4,4397.2" sap2010:WorkflowViewState.IdRef="Sequence_63">
+  <Sequence sap:VirtualizedContainerService.HintSize="1248.4,4439.6" sap2010:WorkflowViewState.IdRef="Sequence_63">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - CWT" sap:VirtualizedContainerService.HintSize="1186.4,4286" sap2010:WorkflowViewState.IdRef="BrowserScope_10" InformativeScreenshot="49fd57bbd8a464bc574f3cca4ffc1657" Selector="&lt;html app='msedge.exe' title='Natural England*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - CWT" sap:VirtualizedContainerService.HintSize="1186.4,4328.4" sap2010:WorkflowViewState.IdRef="BrowserScope_10" InformativeScreenshot="49fd57bbd8a464bc574f3cca4ffc1657" Selector="&lt;html app='msedge.exe' title='Natural England*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1152.4,4139.2" sap2010:WorkflowViewState.IdRef="Sequence_62">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1152.4,4181.6" sap2010:WorkflowViewState.IdRef="Sequence_62">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strUnits" />
               <Variable x:TypeArguments="x:String" Name="strSSSIName" />
@@ -111,7 +112,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Consent" sap:VirtualizedContainerService.HintSize="1090.4,134.8" sap2010:WorkflowViewState.IdRef="SelectItem_24" Item="SSSI S28E Consent">
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Consent" sap:VirtualizedContainerService.HintSize="1090.4,156" sap2010:WorkflowViewState.IdRef="SelectItem_24" Item="SSSI S28E Consent">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="8">
                   <x:String> </x:String>
@@ -123,7 +124,7 @@
                 </scg:List>
               </ui:SelectItem.Items>
               <ui:SelectItem.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81ec7b6a-d5de-4e1a-b997-4c6366857a6d" InformativeScreenshot="22b1b604f6353832080f3e36178bfe46" Selector="&lt;webctrl id='SSSIConsultationSEED*_consultation_theme' tag='SELECT' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81ec7b6a-d5de-4e1a-b997-4c6366857a6d" InformativeScreenshot="22b1b604f6353832080f3e36178bfe46" Selector="&lt;webctrl id='SSSIConsultation*_consultation_theme' tag='SELECT' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -200,9 +201,9 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type In SSSI Name" sap:VirtualizedContainerService.HintSize="1090.4,134.8" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[strSSSIName]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type In SSSI Name" sap:VirtualizedContainerService.HintSize="1090.4,156" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[strSSSIName]">
               <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4feee5c-579b-42f5-a688-a199eb028135" InformativeScreenshot="c1ef939ec9861823bb0054d5e9f718c3" Selector="&lt;webctrl id='TBSSSIConsultationSEED*_SSSI_name' tag='INPUT' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4feee5c-579b-42f5-a688-a199eb028135" InformativeScreenshot="c1ef939ec9861823bb0054d5e9f718c3" Selector="&lt;webctrl id='TBSSSIConsultation*_SSSI_name' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -224,7 +225,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73c02395-d86c-4eec-bb6e-3b5b8289fce2" InformativeScreenshot="9d92c9ba237677e4f521b76503f266a2" Selector="&lt;webctrl id='SSSIConsultationSEED*_SSSI_name' tag='SELECT' /&gt;&lt;webctrl aaname='{{strSSSIName}}* ' tag='OPTION' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73c02395-d86c-4eec-bb6e-3b5b8289fce2" InformativeScreenshot="9d92c9ba237677e4f521b76503f266a2" Selector="[string.Format(&quot;&lt;webctrl id='SSSIConsultation*_SSSI_name' tag='SELECT' /&gt;&lt;webctrl aaname='{0}* ' tag='OPTION' /&gt;&quot;, strSSSIName)]">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -409,7 +410,7 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="376d43b2-0957-4e33-b74d-a4f6f9d6e9d3" InformativeScreenshot="515aae2e0b0cdd772049660dad6d2662" Selector="&lt;webctrl id='SSSIConsultationSEED*_SSSI_units' tag='SELECT' /&gt;&lt;webctrl aaname='{{strUnitNumber}} *' tag='OPTION' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="376d43b2-0957-4e33-b74d-a4f6f9d6e9d3" InformativeScreenshot="515aae2e0b0cdd772049660dad6d2662" Selector="[string.Format(&quot;&lt;webctrl id='SSSIConsultation*_SSSI_units' tag='SELECT' /&gt;&lt;webctrl aaname='{0} *' tag='OPTION' /&gt;&quot;, strUnitNumber)]">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -438,7 +439,7 @@
               <If.Then>
                 <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'Select all units'" sap:VirtualizedContainerService.HintSize="334,106.8" sap2010:WorkflowViewState.IdRef="Check_1">
                   <ui:Check.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ff714a35-24da-4645-b40d-da2b1e6305e0" InformativeScreenshot="a6ad800202f98676d799a3151ba4b0f5" Selector="&lt;webctrl id='ctrl_SSSIConsultationSEED*_select_all_units' tag='INPUT' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ff714a35-24da-4645-b40d-da2b1e6305e0" InformativeScreenshot="a6ad800202f98676d799a3151ba4b0f5" Selector="&lt;webctrl id='ctrl_SSSIConsultation*_select_all_units' tag='INPUT' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
