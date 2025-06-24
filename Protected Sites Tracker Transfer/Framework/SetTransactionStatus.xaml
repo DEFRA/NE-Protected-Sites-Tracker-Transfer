@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,1299.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1244,1299.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SetTransactionStatus___Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -71,6 +71,7 @@
       <x:String>System.Collections.Specialized</x:String>
       <x:String>DRACOE_Microsoft_Graph.Authentication</x:String>
       <x:String>DRACOE_Microsoft_Graph.SharePoint</x:String>
+      <x:String>System.Text</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -128,6 +129,7 @@
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>DRACOE Microsoft Graph</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap2010:Annotation.AnnotationText="Set and log the transaction's status along with extra log fields. &#xA;There can be three possible statuses: Success, Business Exception and System Exception.&#xA;&#xA;Business Rule Exception characterizes an irregular situation according to the process's rules and prevents the transaction to be processed. The transaction is not retried in this case, since the result will be the same until the problem that causes the exception is solved.&#xA;For example, it can be considered a BusinessRuleException if a process expects to read an email's attachment, but the sender didn't attach any file. In this case, immediate retries of the transaction will not yield a different result.&#xA;&#xA;On the other hand, system exceptions are characterized by exceptions whose types are different than BusinessRuleException. When this kind of exception happens, the transaction item can be retried after closing and reopening the applications involved in the process. The rationale behind this is that the exception was caused by a problem in the applications, which might be solved by restarting them.&#xA;&#xA;If Orchestrator queues are the source of transactions, the Set Transaction Status activity is used to update the status. In addition, the retry mechanism is also implemented by Orchestrator.&#xA;&#xA;If Orchestrator queues are not used, the status can be set, for example, by writing to a specific column in a spreadsheet. In such cases, the retry mechanism is covered by the framework and the number of retries is defined in the configuration file.&#xA;&#xA;At the end, io_TransactionNumber is incremented, which makes the framework get the next transaction to be processed." DisplayName="Set Transaction Status" sap:VirtualizedContainerService.HintSize="722,1234" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -295,7 +297,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">330,663.333333333333 330,693.333333333333 210,693.333333333333 210,715.6</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="If a BussinessRuleException is thrown during the process, the transaction item's status is updated as Failed (Exception Type: Business).&#xA;" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="1260.4,2604" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence sap2010:Annotation.AnnotationText="If a BussinessRuleException is thrown during the process, the transaction item's status is updated as Failed (Exception Type: Business).&#xA;" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="200,194" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -303,7 +305,7 @@
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap2010:Annotation.AnnotationText="Includes custom log fields to the log message.&#xA;They are removed after logging to prevent duplicated status messages about a single transaction." DisplayName="Log business exception with additional logging fields" sap:VirtualizedContainerService.HintSize="1198.4,2448" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence sap2010:Annotation.AnnotationText="Includes custom log fields to the log message.&#xA;They are removed after logging to prevent duplicated status messages about a single transaction." DisplayName="Log business exception with additional logging fields" sap:VirtualizedContainerService.HintSize="1206.4,2736.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -311,8 +313,8 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message (Business Exception)" sap:VirtualizedContainerService.HintSize="1136.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[in_BusinessException.Message]" />
-                  <Assign DisplayName="Assign NE Ref No:" sap:VirtualizedContainerService.HintSize="1136.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <ui:LogMessage DisplayName="Log Message (Business Exception)" sap:VirtualizedContainerService.HintSize="1144.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[in_BusinessException.Message]" />
+                  <Assign DisplayName="Assign NE Ref No:" sap:VirtualizedContainerService.HintSize="1144.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_9">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strNERefNo]</OutArgument>
                     </Assign.To>
@@ -320,7 +322,7 @@
                       <InArgument x:TypeArguments="x:String">[in_TransactionItem("NE_x0020_Ref_x0020_Number").ToString]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[io_config(&quot;Tenancy&quot;).ToString=&quot;Dev&quot;]" DisplayName="If Tenancy is Dev" sap:VirtualizedContainerService.HintSize="1136.4,1418.4" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[io_config(&quot;Tenancy&quot;).ToString=&quot;Dev&quot;]" DisplayName="If Tenancy is Dev" sap:VirtualizedContainerService.HintSize="1144.4,1707.2" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="546,493.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
                         <sap:WorkflowViewStateService.ViewState>
@@ -345,7 +347,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Set Transaction Status - BRE" sap:VirtualizedContainerService.HintSize="546,1256.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence DisplayName="Set Transaction Status - BRE" sap:VirtualizedContainerService.HintSize="554,1545.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ss:SecureString" Name="BearerToken" />
                           <Variable x:TypeArguments="x:String" Name="strSiteID" />
@@ -358,11 +360,11 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <da:Get_Bearer_Token DisplayName="Get Bearer Token" sap:VirtualizedContainerService.HintSize="484,244.4" sap2010:WorkflowViewState.IdRef="Get_Bearer_Token_2" in_strClientID="[(New System.Net.NetworkCredential(“”, &quot;6ae6a809-3038-4f7b-9617-ef5d6d338d08&quot;)).SecurePassword]" in_strClientSecret="[(New System.Net.NetworkCredential(“”, &quot;AYZ8Q~gcRZfpZSGDergAlYd5Dc-dZIRP_SpZQckw&quot;)).SecurePassword]" in_strTenantID="[(New System.Net.NetworkCredential(&quot;&quot;, &quot;770a2450-0227-4c62-90c7-4e38537f1102&quot;)).SecurePassword]" out_strBearerToken="[BearerToken]" />
-                        <ds:Get_Site_ID DisplayName="Get Site ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_Site_ID_2" in_strBearerToken="[BearerToken]" in_strSite="teams/Team1356" in_strTenancy="defra.sharepoint.com" out_strSiteID="[strSiteID]" />
-                        <ds:Get_List_ID DisplayName="Get List ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_List_ID_2" in_strBearerToken="[BearerToken]" in_strListDisplayName="Protected Sites Tracker" in_strSiteID="[strSiteID]" out_strListID="[strListID]" />
-                        <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_2" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+strNERefNo+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
-                        <ui:MultipleAssign DisplayName="Multiple Assign - Update - BRE" sap:VirtualizedContainerService.HintSize="484,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                        <da:Get_Bearer_Token DisplayName="Get Bearer Token" sap:VirtualizedContainerService.HintSize="492,244.4" sap2010:WorkflowViewState.IdRef="Get_Bearer_Token_2" in_strClientID="[(New System.Net.NetworkCredential(“”, &quot;6ae6a809-3038-4f7b-9617-ef5d6d338d08&quot;)).SecurePassword]" in_strClientSecret="[(New System.Net.NetworkCredential(“”, &quot;AYZ8Q~gcRZfpZSGDergAlYd5Dc-dZIRP_SpZQckw&quot;)).SecurePassword]" in_strTenantID="[(New System.Net.NetworkCredential(&quot;&quot;, &quot;770a2450-0227-4c62-90c7-4e38537f1102&quot;)).SecurePassword]" out_strBearerToken="[BearerToken]" />
+                        <ds:Get_Site_ID DisplayName="Get Site ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_Site_ID_2" in_strBearerToken="[BearerToken]" in_strSite="teams/Team1356" in_strTenancy="defra.sharepoint.com" out_strSiteID="[strSiteID]" />
+                        <ds:Get_List_ID DisplayName="Get List ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_List_ID_2" in_strBearerToken="[BearerToken]" in_strListDisplayName="Protected Sites Tracker" in_strSiteID="[strSiteID]" out_strListID="[strListID]" />
+                        <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_2" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+strNERefNo+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
+                        <ui:MultipleAssign DisplayName="Multiple Assign - Update - BRE" sap:VirtualizedContainerService.HintSize="492,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -392,8 +394,24 @@
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
-                        <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - BRE" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_2" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
-                        <If Condition="[not io_Config(&quot;ButtonSelected&quot;).tostring=&quot;specificCase&quot;]" DisplayName="If Not Specific Case" sap:VirtualizedContainerService.HintSize="484,382" sap2010:WorkflowViewState.IdRef="If_6">
+                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,313.6" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:02">
+                          <ui:RetryScope.ActivityBody>
+                            <ActivityAction>
+                              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - BRE" sap:VirtualizedContainerService.HintSize="388,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_2" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:RetryScope.ActivityBody>
+                          <ui:RetryScope.Condition>
+                            <ActivityFunc x:TypeArguments="x:Boolean" />
+                          </ui:RetryScope.Condition>
+                        </ui:RetryScope>
+                        <If Condition="[not io_Config(&quot;ButtonSelected&quot;).tostring=&quot;specificCase&quot;]" DisplayName="If Not Specific Case" sap:VirtualizedContainerService.HintSize="492,382" sap2010:WorkflowViewState.IdRef="If_6">
                           <If.Then>
                             <ui:RemoveDataRow Row="{x:Null}" DataTable="[io_datListItems]" DisplayName="Remove Data Row - First Row - BRE" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="RemoveDataRow_7" RowIndex="0" />
                           </If.Then>
@@ -410,8 +428,8 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <ui:LogMessage DisplayName="Log Message - BRE" sap:VirtualizedContainerService.HintSize="1136.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;PST Updated - BRE&quot;]" />
-                  <Sequence DisplayName="Populate Work Log" sap:VirtualizedContainerService.HintSize="1136.4,442.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <ui:LogMessage DisplayName="Log Message - BRE" sap:VirtualizedContainerService.HintSize="1144.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;PST Updated - BRE&quot;]" />
+                  <Sequence DisplayName="Populate Work Log" sap:VirtualizedContainerService.HintSize="1144.4,442.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -453,7 +471,7 @@
                   <av:Size x:Key="ShapeSize">200,177.6</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="If a system exception occurs during the process, the transaction item's status is updated as Failed (Exception Type: Application)." DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="200,177.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence sap2010:Annotation.AnnotationText="If a system exception occurs during the process, the transaction item's status is updated as Failed (Exception Type: Application)." DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="1206.4,4649.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="QueueRetry" />
                   <Variable x:TypeArguments="x:String" Name="strLogNote" />
@@ -465,7 +483,7 @@
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign DisplayName="Assign QueryRetry" sap:VirtualizedContainerService.HintSize="1136.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign DisplayName="Assign QueryRetry" sap:VirtualizedContainerService.HintSize="1144.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[QueueRetry]</OutArgument>
                   </Assign.To>
@@ -473,7 +491,7 @@
                     <InArgument x:TypeArguments="x:Boolean">[in_TransactionItem isNot Nothing AndAlso (in_TransactionItem.GetType is GetType(Uipath.Core.QueueItem))]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke RetryCurrentTransaction workflow" sap:VirtualizedContainerService.HintSize="1136.4,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\RetryCurrentTransaction.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke RetryCurrentTransaction workflow" sap:VirtualizedContainerService.HintSize="1144.4,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\RetryCurrentTransaction.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[io_Config]</InArgument>
                     <InOutArgument x:TypeArguments="x:Int32" x:Key="io_RetryNumber">[io_RetryNumber]</InOutArgument>
@@ -482,7 +500,7 @@
                     <InArgument x:TypeArguments="x:Boolean" x:Key="in_QueueRetry">[QueueRetry]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
-                <TryCatch sap2010:Annotation.AnnotationText="Take a screenshot of the current state of the screen to facilitate debugging." DisplayName="Try taking screenshot" sap:VirtualizedContainerService.HintSize="1136.4,392" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch sap2010:Annotation.AnnotationText="Take a screenshot of the current state of the screen to facilitate debugging." DisplayName="Try taking screenshot" sap:VirtualizedContainerService.HintSize="1144.4,392" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -515,7 +533,7 @@
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <Sequence DisplayName="Evaluate Consecutive System Exceptions" sap:VirtualizedContainerService.HintSize="1136.4,864" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Evaluate Consecutive System Exceptions" sap:VirtualizedContainerService.HintSize="1144.4,864" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -565,7 +583,7 @@
                     </If.Then>
                   </If>
                 </Sequence>
-                <Assign DisplayName="Assign NE Ref No:" sap:VirtualizedContainerService.HintSize="1136.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign DisplayName="Assign NE Ref No:" sap:VirtualizedContainerService.HintSize="1144.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_10">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[strNERefNo]</OutArgument>
                   </Assign.To>
@@ -573,7 +591,7 @@
                     <InArgument x:TypeArguments="x:String">[in_TransactionItem("NE_x0020_Ref_x0020_Number").ToString]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <If Condition="[io_config(&quot;Tenancy&quot;).ToString=&quot;Dev&quot;]" DisplayName="If Tenancy is Dev" sap:VirtualizedContainerService.HintSize="1136.4,1418.4" sap2010:WorkflowViewState.IdRef="If_3">
+                <If Condition="[io_config(&quot;Tenancy&quot;).ToString=&quot;Dev&quot;]" DisplayName="If Tenancy is Dev" sap:VirtualizedContainerService.HintSize="1144.4,1707.2" sap2010:WorkflowViewState.IdRef="If_3">
                   <If.Then>
                     <Sequence sap:VirtualizedContainerService.HintSize="546,493.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
                       <sap:WorkflowViewStateService.ViewState>
@@ -598,7 +616,7 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Set Transaction Status - System Exception" sap:VirtualizedContainerService.HintSize="546,1256.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <Sequence DisplayName="Set Transaction Status - System Exception" sap:VirtualizedContainerService.HintSize="554,1545.6" sap2010:WorkflowViewState.IdRef="Sequence_24">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="ss:SecureString" Name="BearerToken" />
                         <Variable x:TypeArguments="x:String" Name="strSiteID" />
@@ -611,11 +629,11 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <da:Get_Bearer_Token DisplayName="Get Bearer Token" sap:VirtualizedContainerService.HintSize="484,244.4" sap2010:WorkflowViewState.IdRef="Get_Bearer_Token_1" in_strClientID="[(New System.Net.NetworkCredential(“”, &quot;6ae6a809-3038-4f7b-9617-ef5d6d338d08&quot;)).SecurePassword]" in_strClientSecret="[(New System.Net.NetworkCredential(“”, &quot;AYZ8Q~gcRZfpZSGDergAlYd5Dc-dZIRP_SpZQckw&quot;)).SecurePassword]" in_strTenantID="[(New System.Net.NetworkCredential(&quot;&quot;, &quot;770a2450-0227-4c62-90c7-4e38537f1102&quot;)).SecurePassword]" out_strBearerToken="[BearerToken]" />
-                      <ds:Get_Site_ID DisplayName="Get Site ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_Site_ID_1" in_strBearerToken="[BearerToken]" in_strSite="teams/Team1356" in_strTenancy="defra.sharepoint.com" out_strSiteID="[strSiteID]" />
-                      <ds:Get_List_ID DisplayName="Get List ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_List_ID_1" in_strBearerToken="[BearerToken]" in_strListDisplayName="Protected Sites Tracker" in_strSiteID="[strSiteID]" out_strListID="[strListID]" />
-                      <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_1" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+strNERefNo+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
-                      <ui:MultipleAssign DisplayName="Multiple Assign - Update - System Exception" sap:VirtualizedContainerService.HintSize="484,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <da:Get_Bearer_Token DisplayName="Get Bearer Token" sap:VirtualizedContainerService.HintSize="492,244.4" sap2010:WorkflowViewState.IdRef="Get_Bearer_Token_1" in_strClientID="[(New System.Net.NetworkCredential(“”, &quot;6ae6a809-3038-4f7b-9617-ef5d6d338d08&quot;)).SecurePassword]" in_strClientSecret="[(New System.Net.NetworkCredential(“”, &quot;AYZ8Q~gcRZfpZSGDergAlYd5Dc-dZIRP_SpZQckw&quot;)).SecurePassword]" in_strTenantID="[(New System.Net.NetworkCredential(&quot;&quot;, &quot;770a2450-0227-4c62-90c7-4e38537f1102&quot;)).SecurePassword]" out_strBearerToken="[BearerToken]" />
+                      <ds:Get_Site_ID DisplayName="Get Site ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_Site_ID_1" in_strBearerToken="[BearerToken]" in_strSite="teams/Team1356" in_strTenancy="defra.sharepoint.com" out_strSiteID="[strSiteID]" />
+                      <ds:Get_List_ID DisplayName="Get List ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_List_ID_1" in_strBearerToken="[BearerToken]" in_strListDisplayName="Protected Sites Tracker" in_strSiteID="[strSiteID]" out_strListID="[strListID]" />
+                      <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="492,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_1" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+strNERefNo+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
+                      <ui:MultipleAssign DisplayName="Multiple Assign - Update - System Exception" sap:VirtualizedContainerService.HintSize="492,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -645,8 +663,24 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - System Exception" sap:VirtualizedContainerService.HintSize="484,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_1" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
-                      <If Condition="[not io_Config(&quot;ButtonSelected&quot;).tostring=&quot;specificCase&quot;]" DisplayName="If Not Specific Case" sap:VirtualizedContainerService.HintSize="484,382" sap2010:WorkflowViewState.IdRef="If_7">
+                      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,313.6" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="2" RetryInterval="00:00:02">
+                        <ui:RetryScope.ActivityBody>
+                          <ActivityAction>
+                            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - System Exception" sap:VirtualizedContainerService.HintSize="388,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_1" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:RetryScope.ActivityBody>
+                        <ui:RetryScope.Condition>
+                          <ActivityFunc x:TypeArguments="x:Boolean" />
+                        </ui:RetryScope.Condition>
+                      </ui:RetryScope>
+                      <If Condition="[not io_Config(&quot;ButtonSelected&quot;).tostring=&quot;specificCase&quot;]" DisplayName="If Not Specific Case" sap:VirtualizedContainerService.HintSize="492,382" sap2010:WorkflowViewState.IdRef="If_7">
                         <If.Then>
                           <ui:RemoveDataRow Row="{x:Null}" DataTable="[io_datListItems]" DisplayName="Remove Data Row - First Row - Sys Ex" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="RemoveDataRow_8" RowIndex="0" />
                         </If.Then>
@@ -663,7 +697,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <ui:LogMessage DisplayName="Log Message - Sys Ex" sap:VirtualizedContainerService.HintSize="1136.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;PST Updated - System Exception&quot;]" />
+                <ui:LogMessage DisplayName="Log Message - Sys Ex" sap:VirtualizedContainerService.HintSize="1144.4,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;PST Updated - System Exception&quot;]" />
                 <Sequence DisplayName="Populate Work Log" sap:VirtualizedContainerService.HintSize="1136.4,442.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">

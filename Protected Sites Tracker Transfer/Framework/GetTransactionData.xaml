@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1932,6314.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1932,6336</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetTransactionData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="108">
@@ -79,6 +79,8 @@
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Web.Activities</x:String>
       <x:String>System.Text</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -145,10 +147,9 @@
       <AssemblyReference>DRACOE Microsoft Graph</AssemblyReference>
       <AssemblyReference>UiPath.Web</AssemblyReference>
       <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="1942,6249.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="1942,6270.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="datExtractedItems" />
       <Variable x:TypeArguments="x:String" Name="strAdditionalSSSI" />
@@ -164,7 +165,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If sap2010:Annotation.AnnotationText="Where the Process Type has been selected as &quot;Single&quot; mode and the framework has completed the first transaction then it should prompt the user to ask if it should continue processing. &#xA;&#xA;Before prompting it also checks to ensure there is more data to process before presenting the user with the option to continue." Condition="[in_strProcessType = &quot;single&quot; AND in_TransactionNumber &gt;1 AND in_boolContinue = False]" DisplayName="Present &quot;Single&quot; Mode Form?" sap:VirtualizedContainerService.HintSize="1880,229.2" sap2010:WorkflowViewState.IdRef="If_14">
+    <If sap2010:Annotation.AnnotationText="Where the Process Type has been selected as &quot;Single&quot; mode and the framework has completed the first transaction then it should prompt the user to ask if it should continue processing. &#xA;&#xA;Before prompting it also checks to ensure there is more data to process before presenting the user with the option to continue." Condition="[in_strProcessType = &quot;single&quot; AND in_TransactionNumber &gt;1 AND in_boolContinue = False]" DisplayName="Present &quot;Single&quot; Mode Form?" sap:VirtualizedContainerService.HintSize="1880,245.6" sap2010:WorkflowViewState.IdRef="If_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -226,15 +227,15 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <Sequence DisplayName="Get Transaction Item- Area Selector" sap:VirtualizedContainerService.HintSize="1880,4669.6" sap2010:WorkflowViewState.IdRef="Sequence_55">
+    <Sequence DisplayName="Get Transaction Item- Area Selector" sap:VirtualizedContainerService.HintSize="1880,4674.4" sap2010:WorkflowViewState.IdRef="Sequence_55">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[io_datListItems is Nothing]" DisplayName="If dtaListItems is nothing:" sap:VirtualizedContainerService.HintSize="1818,2958.4" sap2010:WorkflowViewState.IdRef="If_22">
+      <If Condition="[io_datListItems is Nothing]" DisplayName="If dtaListItems is nothing:" sap:VirtualizedContainerService.HintSize="1818,2960.8" sap2010:WorkflowViewState.IdRef="If_22">
         <If.Then>
-          <Sequence DisplayName="Get Transaction Data - By Area" sap:VirtualizedContainerService.HintSize="689.6,2209.6" sap2010:WorkflowViewState.IdRef="Sequence_59">
+          <Sequence DisplayName="Get Transaction Data - By Area" sap:VirtualizedContainerService.HintSize="689.6,2212.8" sap2010:WorkflowViewState.IdRef="Sequence_59">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="arrAreas" />
               <Variable x:TypeArguments="njl:JObject" Name="JObjectListItem" />
@@ -244,16 +245,16 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ds:Get_List_Items DisplayName="Get List Item - Multiple" sap:VirtualizedContainerService.HintSize="627.6,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Items_1" in_strBearerToken="[BearerToken]" in_strColumnsNeeded="NE_x0020_Ref_x0020_Number,Team,Work_x0020_Area,DAS_x0020_Eligible,FCS_x0020_Closed_x0020_on_x0020_,Confirmation,Date_x0020_of_x0020_Confirmation,Date_x0020_Received_x0020_by_x00,Final_x0020_Response_x0020_Sent,SSSI_x0020_Response_x0020_Type,Consulting_x0020_Body_x0020_Type,Organisation_x0020_Name,Client_x0020_Name,Description,Time_x0020_Taken,Grid_x0020_Reference,SSSI_x0020_Sie_x0020_Name,Additional_x0020_SSSI_x0020_Site0,Unit_x0020_No_x002e_,Key_x0020_Notes,Reason_x0020_for_x0020_Extension,OLD_x0020__x002f__x0020_ORNEC_x0,Consent_x0020__x002f__x0020_Asse,Consultation_x0020_Type,Is_x0020_Proposal_x0020_Necessar,Likely_x0020_Significant_x0020_E,Allocated_x0020_to,Case_x0020_Work_x0020_Tracker_x0,FCS_x0020_Staff_x0020_Member,Date_x0020_closed_x0020_on_x0020,Level_x0020_of_x0020_Risk,Description_x0020_of_x0020_Exten,Robot_x0020_Status" in_strFilter="$filter=fields/DAS_x0020_Eligible eq 'No' and &#xA;fields/FCS_x0020_Closed_x0020_on_x0020_ eq null and &#xA;fields/Confirmation eq 'Yes' and &#xA;fields/Final_x0020_Response_x0020_Sent ne null and &#xA;(&#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28I Advice' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'Reg 63(3) - Standalone HRA'&#xA;)" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_dtaListItems="[io_datListItems]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="627.6,53.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ds:Get_List_Items DisplayName="Get List Item - Multiple" sap:VirtualizedContainerService.HintSize="627.6,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Items_16" in_strBearerToken="[BearerToken]" in_strColumnsNeeded="NE_x0020_Ref_x0020_Number,Team,Work_x0020_Area,DAS_x0020_Eligible,FCS_x0020_Closed_x0020_on_x0020_,Confirmation,Date_x0020_of_x0020_Confirmation,Date_x0020_Received_x0020_by_x00,Final_x0020_Response_x0020_Sent,SSSI_x0020_Response_x0020_Type,Consulting_x0020_Body_x0020_Type,Organisation_x0020_Name,Client_x0020_Name,Description,Time_x0020_Taken,Grid_x0020_Reference,SSSI_x0020_Sie_x0020_Name,Additional_x0020_SSSI_x0020_Site0,Unit_x0020_No_x002e_,Key_x0020_Notes,Reason_x0020_for_x0020_Extension,OLD_x0020__x002f__x0020_ORNEC_x0,Consent_x0020__x002f__x0020_Asse,Consultation_x0020_Type,Is_x0020_Proposal_x0020_Necessar,Likely_x0020_Significant_x0020_E,Allocated_x0020_to,Case_x0020_Work_x0020_Tracker_x0,FCS_x0020_Staff_x0020_Member,Date_x0020_closed_x0020_on_x0020,Level_x0020_of_x0020_Risk,Description_x0020_of_x0020_Exten,Robot_x0020_Status" in_strFilter="$filter=fields/DAS_x0020_Eligible eq 'No' and &#xA;fields/FCS_x0020_Closed_x0020_on_x0020_ eq null and &#xA;fields/Confirmation eq 'Yes' and &#xA;fields/Final_x0020_Response_x0020_Sent ne null and &#xA;(&#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28I Advice' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'Reg 63(3) - Standalone HRA'&#xA;)" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_dtaListItems="[io_datListItems]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="627.6,53.2" sap2010:WorkflowViewState.IdRef="CommentOut_6">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,194.8" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="3098,2240.8" sap2010:WorkflowViewState.IdRef="Sequence_77">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Sequence - Get List Items" sap:VirtualizedContainerService.HintSize="450,83.6" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                  <Sequence DisplayName="Sequence - Get List Items" sap:VirtualizedContainerService.HintSize="3036,2129.6" sap2010:WorkflowViewState.IdRef="Sequence_75">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dtaListItems2" />
                       <Variable x:TypeArguments="sd:DataTable" Name="dtaListItems3" />
@@ -269,11 +270,11 @@
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Parallel DisplayName="Parallel - Get List items by Area" sap:VirtualizedContainerService.HintSize="2974,86.8" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                    <Parallel DisplayName="Parallel - Get List items by Area" sap:VirtualizedContainerService.HintSize="2974,86.8" sap2010:WorkflowViewState.IdRef="Parallel_2">
                       <ds:Get_List_Items DisplayName="Get List Item - Cheshire to Lancashire" sap:VirtualizedContainerService.HintSize="200,40" sap2010:WorkflowViewState.IdRef="Get_List_Items_3" in_strBearerToken="[BearerToken]" in_strColumnsNeeded="NE_x0020_Ref_x0020_Number,Team,Work_x0020_Area,DAS_x0020_Eligible,FCS_x0020_Closed_x0020_on_x0020_,Confirmation,Date_x0020_of_x0020_Confirmation,Date_x0020_Received_x0020_by_x00,Final_x0020_Response_x0020_Sent,SSSI_x0020_Response_x0020_Type,Consulting_x0020_Body_x0020_Type,Organisation_x0020_Name,Client_x0020_Name,Description,Time_x0020_Taken,Grid_x0020_Reference,SSSI_x0020_Sie_x0020_Name,Additional_x0020_SSSI_x0020_Site0,Unit_x0020_No_x002e_,Key_x0020_Notes,Reason_x0020_for_x0020_Extension,OLD_x0020__x002f__x0020_ORNEC_x0,Consent_x0020__x002f__x0020_Asse,Consultation_x0020_Type,Is_x0020_Proposal_x0020_Necessar,Likely_x0020_Significant_x0020_E,Allocated_x0020_to,Case_x0020_Work_x0020_Tracker_x0,FCS_x0020_Staff_x0020_Member,Date_x0020_closed_x0020_on_x0020,Level_x0020_of_x0020_Risk,Description_x0020_of_x0020_Exten,Robot_x0020_Status" in_strFilter="$filter=fields/DAS_x0020_Eligible eq 'No' and &#xA;fields/FCS_x0020_Closed_x0020_on_x0020_ eq null and &#xA;fields/Team eq 'Cheshire to Lancashire' and &#xA;fields/Confirmation eq 'Yes' and &#xA;fields/Final_x0020_Response_x0020_Sent ne null and &#xA;(&#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28I Advice' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'Reg 63(3) - Standalone HRA'&#xA;)" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_dtaListItems="[io_datListItems]" />
                       <ds:Get_List_Items DisplayName="Get List Item - Cumbria" sap:VirtualizedContainerService.HintSize="200,40" sap2010:WorkflowViewState.IdRef="Get_List_Items_4" in_strBearerToken="[BearerToken]" in_strColumnsNeeded="NE_x0020_Ref_x0020_Number,Team,Work_x0020_Area,DAS_x0020_Eligible,FCS_x0020_Closed_x0020_on_x0020_,Confirmation,Date_x0020_of_x0020_Confirmation,Date_x0020_Received_x0020_by_x00,Final_x0020_Response_x0020_Sent,SSSI_x0020_Response_x0020_Type,Consulting_x0020_Body_x0020_Type,Organisation_x0020_Name,Client_x0020_Name,Description,Time_x0020_Taken,Grid_x0020_Reference,SSSI_x0020_Sie_x0020_Name,Additional_x0020_SSSI_x0020_Site0,Unit_x0020_No_x002e_,Key_x0020_Notes,Reason_x0020_for_x0020_Extension,OLD_x0020__x002f__x0020_ORNEC_x0,Consent_x0020__x002f__x0020_Asse,Consultation_x0020_Type,Is_x0020_Proposal_x0020_Necessar,Likely_x0020_Significant_x0020_E,Allocated_x0020_to,Case_x0020_Work_x0020_Tracker_x0,FCS_x0020_Staff_x0020_Member,Date_x0020_closed_x0020_on_x0020,Level_x0020_of_x0020_Risk,Description_x0020_of_x0020_Exten,Robot_x0020_Status" in_strFilter="$filter=fields/DAS_x0020_Eligible eq 'No' and &#xA;fields/FCS_x0020_Closed_x0020_on_x0020_ eq null and &#xA;fields/Team eq 'Cumbria' and &#xA;fields/Confirmation eq 'Yes' and &#xA;fields/Final_x0020_Response_x0020_Sent ne null and &#xA;(&#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28I Advice' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'Reg 63(3) - Standalone HRA'&#xA;)" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_dtaListItems="[dtaListItems2]" />
                       <ds:Get_List_Items DisplayName="Get List Item - Devon, Cornwall &amp; IoS" sap:VirtualizedContainerService.HintSize="200,40" sap2010:WorkflowViewState.IdRef="Get_List_Items_5" in_strBearerToken="[BearerToken]" in_strColumnsNeeded="NE_x0020_Ref_x0020_Number,Team,Work_x0020_Area,DAS_x0020_Eligible,FCS_x0020_Closed_x0020_on_x0020_,Confirmation,Date_x0020_of_x0020_Confirmation,Date_x0020_Received_x0020_by_x00,Final_x0020_Response_x0020_Sent,SSSI_x0020_Response_x0020_Type,Consulting_x0020_Body_x0020_Type,Organisation_x0020_Name,Client_x0020_Name,Description,Time_x0020_Taken,Grid_x0020_Reference,SSSI_x0020_Sie_x0020_Name,Additional_x0020_SSSI_x0020_Site0,Unit_x0020_No_x002e_,Key_x0020_Notes,Reason_x0020_for_x0020_Extension,OLD_x0020__x002f__x0020_ORNEC_x0,Consent_x0020__x002f__x0020_Asse,Consultation_x0020_Type,Is_x0020_Proposal_x0020_Necessar,Likely_x0020_Significant_x0020_E,Allocated_x0020_to,Case_x0020_Work_x0020_Tracker_x0,FCS_x0020_Staff_x0020_Member,Date_x0020_closed_x0020_on_x0020,Level_x0020_of_x0020_Risk,Description_x0020_of_x0020_Exten,Robot_x0020_Status" in_strFilter="$filter=fields/DAS_x0020_Eligible eq 'No' and &#xA;fields/FCS_x0020_Closed_x0020_on_x0020_ eq null and &#xA;fields/Confirmation eq 'Yes' and &#xA;fields/Final_x0020_Response_x0020_Sent ne null and &#xA;(&#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28E Consent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - MTA' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent HLS Extension' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS HT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent CS MT' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28H Assent - CS Capital Grants' or &#xA;  fields/Work_x0020_Area eq 'SSSI - S28I Advice' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28E Consent with HRA' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent' or &#xA;  fields/Work_x0020_Area eq 'SFI - S28H Assent with HRA' or &#xA;  fields/Work_x0020_Area eq 'Reg 63(3) - Standalone HRA'&#xA;)" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_dtaListItems="[dtaListItems3]" />
@@ -374,10 +375,10 @@
             </ui:FilterDataTable>
             <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="627.6,293.2" sap2010:WorkflowViewState.IdRef="TryCatch_4">
               <TryCatch.Try>
-                <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_1" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+io_datListItems(0)(&quot;NE_x0020_Ref_x0020_Number&quot;).tostring+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
+                <ds:Get_List_Item_ID DisplayName="Get List Item ID" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Get_List_Item_ID_3" in_strBearerToken="[BearerToken]" in_strFilter="[&quot;fields/NE_x0020_Ref_x0020_Number eq '&quot;+io_datListItems(0)(&quot;NE_x0020_Ref_x0020_Number&quot;).tostring+&quot;'&quot;]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" out_strItemID="[strItemID]" />
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.8" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.6,22.8" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -428,7 +429,7 @@
                 <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - In Progress" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_1" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
               </If.Else>
             </If>
-            <Assign DisplayName="Initialise Transaction Item" sap:VirtualizedContainerService.HintSize="627.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_50">
+            <Assign DisplayName="Initialise Transaction Item" sap:VirtualizedContainerService.HintSize="627.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_50">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[out_TransactionItem]</OutArgument>
               </Assign.To>
@@ -436,31 +437,31 @@
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new dictionary (of string, object)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[io_datListItems]" DisplayName="For Each Row in Extracted Data" sap:VirtualizedContainerService.HintSize="627.6,611.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[io_datListItems]" DisplayName="For Each Row in Extracted Data" sap:VirtualizedContainerService.HintSize="627.6,613.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="593.6,494.4" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                  <Sequence sap:VirtualizedContainerService.HintSize="593.6,496" sap2010:WorkflowViewState.IdRef="Sequence_61">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="531.6,318.4" sap2010:WorkflowViewState.IdRef="ForEach`1_24" Values="[io_datListItems.Columns]">
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="531.6,320" sap2010:WorkflowViewState.IdRef="ForEach`1_24" Values="[io_datListItems.Columns]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,192.8" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_60">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign DisplayName="Add item to Transaction Data Dictionary" sap:VirtualizedContainerService.HintSize="434,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+                            <Assign DisplayName="Add item to Transaction Data Dictionary" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_51">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[out_TransactionItem(currentItem.tostring)]</OutArgument>
                               </Assign.To>
@@ -480,7 +481,7 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="Get Transaction Data - Check Next Row" sap:VirtualizedContainerService.HintSize="1084,2796.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+          <Sequence DisplayName="Get Transaction Data - Check Next Row" sap:VirtualizedContainerService.HintSize="1084,2800" sap2010:WorkflowViewState.IdRef="Sequence_56">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtaFirstRow" />
               <Variable x:TypeArguments="x:Boolean" Name="booRowFound" />
@@ -490,7 +491,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Set booRowFound to FALSE" sap:VirtualizedContainerService.HintSize="1022,82.4" sap2010:WorkflowViewState.IdRef="Assign_52">
+            <Assign DisplayName="Set booRowFound to FALSE" sap:VirtualizedContainerService.HintSize="1022,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[booRowFound]</OutArgument>
               </Assign.To>
@@ -498,9 +499,9 @@
                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[booRowFound=FALSE]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1022,1966.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[booRowFound=FALSE]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1022,1967.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="986.4,1798.4" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="986.4,1799.2" sap2010:WorkflowViewState.IdRef="Sequence_62">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -527,9 +528,9 @@
                       </Catch>
                     </TryCatch.Catches>
                   </TryCatch>
-                  <If Condition="[dtaFirstRow(0)(&quot;Robot_x0020_Status&quot;).tostring is Nothing or dtaFirstRow(0)(&quot;Robot_x0020_Status&quot;).tostring=&quot;&quot;]" DisplayName="If Robot Status is Nothing" sap:VirtualizedContainerService.HintSize="924.4,1354" sap2010:WorkflowViewState.IdRef="If_20">
+                  <If Condition="[dtaFirstRow(0)(&quot;Robot_x0020_Status&quot;).tostring is Nothing or dtaFirstRow(0)(&quot;Robot_x0020_Status&quot;).tostring=&quot;&quot;]" DisplayName="If Robot Status is Nothing" sap:VirtualizedContainerService.HintSize="924.4,1354.8" sap2010:WorkflowViewState.IdRef="If_20">
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="546,1193.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                      <Sequence sap:VirtualizedContainerService.HintSize="546,1194.4" sap2010:WorkflowViewState.IdRef="Sequence_57">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="sd:DataRow" Name="rowTransactionItem" />
                           <Variable x:TypeArguments="njl:JObject" Name="JObjectListItem" />
@@ -603,7 +604,7 @@
                             <ds:Edit_Sharepoint_List_Item DisplayName="Edit Sharepoint List Item - In Progress" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Edit_Sharepoint_List_Item_2" in_strBearerToken="[BearerToken]" in_strBody="[JObjectListItem]" in_strItemID="[strItemID]" in_strListID="[strListID]" in_strSiteID="[strSiteID]" />
                           </If.Else>
                         </If>
-                        <Assign DisplayName="Set booRowFound to TRUE" sap:VirtualizedContainerService.HintSize="484,81.6" sap2010:WorkflowViewState.IdRef="Assign_54">
+                        <Assign DisplayName="Set booRowFound to TRUE" sap:VirtualizedContainerService.HintSize="484,82.4" sap2010:WorkflowViewState.IdRef="Assign_54">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[booRowFound]</OutArgument>
                           </Assign.To>
@@ -621,7 +622,7 @@
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
-            <Assign DisplayName="Initialise Transaction Item" sap:VirtualizedContainerService.HintSize="1022,81.6" sap2010:WorkflowViewState.IdRef="Assign_56">
+            <Assign DisplayName="Initialise Transaction Item" sap:VirtualizedContainerService.HintSize="1022,82.4" sap2010:WorkflowViewState.IdRef="Assign_56">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[out_TransactionItem]</OutArgument>
               </Assign.To>
@@ -629,25 +630,25 @@
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new dictionary (of string, object)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtaFirstRow]" DisplayName="For Each Row in Extracted Data" sap:VirtualizedContainerService.HintSize="1022,435.2" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtaFirstRow]" DisplayName="For Each Row in Extracted Data" sap:VirtualizedContainerService.HintSize="1022,437.6" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="531.6,318.4" sap2010:WorkflowViewState.IdRef="ForEach`1_25" Values="[dtaFirstRow.Columns]">
+                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="531.6,320" sap2010:WorkflowViewState.IdRef="ForEach`1_25" Values="[dtaFirstRow.Columns]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,192.8" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_64">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Add item to Transaction Data Dictionary" sap:VirtualizedContainerService.HintSize="434,81.6" sap2010:WorkflowViewState.IdRef="Assign_57">
+                          <Assign DisplayName="Add item to Transaction Data Dictionary" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_57">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Object">[out_TransactionItem(currentItem.tostring)]</OutArgument>
                             </Assign.To>
@@ -665,21 +666,21 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For each item in LookupValue Regex:" sap:VirtualizedContainerService.HintSize="1818,479.2" sap2010:WorkflowViewState.IdRef="ForEach`1_26" Values="[system.text.regularexpressions.regex.matches(out_TransactionItem(&quot;Allocated_x0020_to&quot;).ToString,&quot;(?&lt;=&quot;&quot;LookupValue&quot;&quot;: &quot;&quot;).*?(?=&quot;&quot;)&quot;)]">
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For each item in LookupValue Regex:" sap:VirtualizedContainerService.HintSize="1818,481.6" sap2010:WorkflowViewState.IdRef="ForEach`1_26" Values="[system.text.regularexpressions.regex.matches(out_TransactionItem(&quot;Allocated_x0020_to&quot;).ToString,&quot;(?&lt;=&quot;&quot;LookupValue&quot;&quot;: &quot;&quot;).*?(?=&quot;&quot;)&quot;)]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="974.4,353.6" sap2010:WorkflowViewState.IdRef="Sequence_65">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="974.4,355.2" sap2010:WorkflowViewState.IdRef="Sequence_65">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[strAssignedTo is Nothing or strAssignedTo=&quot;&quot;]" DisplayName="If AssignedTo String is Nothing" sap:VirtualizedContainerService.HintSize="912.4,242.4" sap2010:WorkflowViewState.IdRef="If_23">
+              <If Condition="[strAssignedTo is Nothing or strAssignedTo=&quot;&quot;]" DisplayName="If AssignedTo String is Nothing" sap:VirtualizedContainerService.HintSize="912.4,244" sap2010:WorkflowViewState.IdRef="If_23">
                 <If.Then>
-                  <Assign DisplayName="Assign Item" sap:VirtualizedContainerService.HintSize="434,81.6" sap2010:WorkflowViewState.IdRef="Assign_58">
+                  <Assign DisplayName="Assign Item" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_58">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strAssignedTo]</OutArgument>
                     </Assign.To>
@@ -689,7 +690,7 @@
                   </Assign>
                 </If.Then>
                 <If.Else>
-                  <Assign DisplayName="Assign ; + Item" sap:VirtualizedContainerService.HintSize="434,81.6" sap2010:WorkflowViewState.IdRef="Assign_59">
+                  <Assign DisplayName="Assign ; + Item" sap:VirtualizedContainerService.HintSize="434,82.4" sap2010:WorkflowViewState.IdRef="Assign_59">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strAssignedTo]</OutArgument>
                     </Assign.To>
